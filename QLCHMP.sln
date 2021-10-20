@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLCHMP", "QLCHMP\QLCHMP.csproj", "{BDA11D62-5FDB-45C1-938E-BFBAEA1A026D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDA11D62-5FDB-45C1-938E-BFBAEA1A026D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA11D62-5FDB-45C1-938E-BFBAEA1A026D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA11D62-5FDB-45C1-938E-BFBAEA1A026D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA11D62-5FDB-45C1-938E-BFBAEA1A026D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC6E6C91-F0A4-4DA4-9DFE-F32CE63342F6}
+	EndGlobalSection
+EndGlobal
