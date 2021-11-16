@@ -53,16 +53,163 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\frmBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmBanHang.Designer.cs">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmBCTK_DoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmBCTK_DoanhThu.Designer.cs">
+      <DependentUpon>frmBCTK_DoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmBCTK_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmBCTK_NhanVien.Designer.cs">
+      <DependentUpon>frmBCTK_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmBCTK_SanPhamHot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmBCTK_SanPhamHot.Designer.cs">
+      <DependentUpon>frmBCTK_SanPhamHot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmBCTK_TongChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmBCTK_TongChi.Designer.cs">
+      <DependentUpon>frmBCTK_TongChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmChamCong.Designer.cs">
+      <DependentUpon>frmChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmChiTietHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmChiTietHD.Designer.cs">
+      <DependentUpon>frmChiTietHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmDangKi.Designer.cs">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interface\frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\frmHoTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmHoTro.Designer.cs">
+      <DependentUpon>frmHoTro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmLoaiSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmLoaiSP.Designer.cs">
+      <DependentUpon>frmLoaiSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmSanPham.Designer.cs">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmThanhToan.Designer.cs">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmTinhLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmTinhLuong.Designer.cs">
+      <DependentUpon>frmTinhLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmBanHang.resx">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmBCTK_DoanhThu.resx">
+      <DependentUpon>frmBCTK_DoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmBCTK_NhanVien.resx">
+      <DependentUpon>frmBCTK_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmBCTK_SanPhamHot.resx">
+      <DependentUpon>frmBCTK_SanPhamHot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmBCTK_TongChi.resx">
+      <DependentUpon>frmBCTK_TongChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmChamCong.resx">
+      <DependentUpon>frmChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmChiTietHD.resx">
+      <DependentUpon>frmChiTietHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmDangKi.resx">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmHoTro.resx">
+      <DependentUpon>frmHoTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmLoaiSP.resx">
+      <DependentUpon>frmLoaiSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmSanPham.resx">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmThanhToan.resx">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmTinhLuong.resx">
+      <DependentUpon>frmTinhLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

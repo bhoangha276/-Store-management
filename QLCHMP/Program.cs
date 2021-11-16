@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLCHMP.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace QLCHMP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            //Application.Run(new frmLogin());
+            Application.Run(new frmHome());
         }
     }
 }
