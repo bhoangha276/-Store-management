@@ -37,6 +37,8 @@ namespace QLCHMP
             this.txtTK = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnDangKi = new System.Windows.Forms.Button();
+            this.btnDoiMK = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -108,11 +110,31 @@ namespace QLCHMP
             this.label1.TabIndex = 10;
             this.label1.Text = "ĐĂNG NHẬP HỆ THỐNG";
             // 
-            // Login
+            // btnDangKi
+            // 
+            this.btnDangKi.Location = new System.Drawing.Point(765, 51);
+            this.btnDangKi.Name = "btnDangKi";
+            this.btnDangKi.Size = new System.Drawing.Size(150, 44);
+            this.btnDangKi.TabIndex = 17;
+            this.btnDangKi.Text = "Đăng kí";
+            this.btnDangKi.UseVisualStyleBackColor = true;
+            // 
+            // btnDoiMK
+            // 
+            this.btnDoiMK.Location = new System.Drawing.Point(765, 152);
+            this.btnDoiMK.Name = "btnDoiMK";
+            this.btnDoiMK.Size = new System.Drawing.Size(150, 73);
+            this.btnDoiMK.TabIndex = 18;
+            this.btnDoiMK.Text = "Đổi mật khẩu";
+            this.btnDoiMK.UseVisualStyleBackColor = true;
+            // 
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 333);
+            this.ClientSize = new System.Drawing.Size(967, 333);
+            this.Controls.Add(this.btnDoiMK);
+            this.Controls.Add(this.btnDangKi);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
@@ -121,7 +143,7 @@ namespace QLCHMP
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Login";
+            this.Name = "frmLogin";
             this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
@@ -138,6 +160,8 @@ namespace QLCHMP
         private System.Windows.Forms.TextBox txtTK;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDangKi;
+        private System.Windows.Forms.Button btnDoiMK;
     }
 }
 

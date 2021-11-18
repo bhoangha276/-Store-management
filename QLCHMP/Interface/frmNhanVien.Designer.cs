@@ -47,14 +47,6 @@ namespace QLCHMP.Interface
             this.panelGioiTinh = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCMND = new System.Windows.Forms.TextBox();
@@ -68,6 +60,17 @@ namespace QLCHMP.Interface
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbbHSL = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.panelGioiTinh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -214,7 +217,7 @@ namespace QLCHMP.Interface
             "Thủ kho",
             "Kế toán",
             "Quản lý"});
-            this.cbbChucVu.Location = new System.Drawing.Point(1416, 40);
+            this.cbbChucVu.Location = new System.Drawing.Point(1416, 37);
             this.cbbChucVu.Name = "cbbChucVu";
             this.cbbChucVu.Size = new System.Drawing.Size(266, 33);
             this.cbbChucVu.TabIndex = 8;
@@ -224,7 +227,7 @@ namespace QLCHMP.Interface
             this.dtNgaySinh.Checked = false;
             this.dtNgaySinh.CustomFormat = "dd/MM/yyy";
             this.dtNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgaySinh.Location = new System.Drawing.Point(1416, 111);
+            this.dtNgaySinh.Location = new System.Drawing.Point(1416, 98);
             this.dtNgaySinh.Name = "dtNgaySinh";
             this.dtNgaySinh.Size = new System.Drawing.Size(266, 30);
             this.dtNgaySinh.TabIndex = 46;
@@ -262,7 +265,8 @@ namespace QLCHMP.Interface
             this.GioiTinh,
             this.NgaySinh,
             this.DiaChi,
-            this.SDT});
+            this.SDT,
+            this.HeSoLuong});
             this.dgvNhanVien.Location = new System.Drawing.Point(75, 476);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 62;
@@ -271,70 +275,6 @@ namespace QLCHMP.Interface
             this.dgvNhanVien.Size = new System.Drawing.Size(1774, 537);
             this.dgvNhanVien.TabIndex = 9;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
-            // 
-            // MaNV
-            // 
-            this.MaNV.DataPropertyName = "MaNV";
-            this.MaNV.HeaderText = "Mã nhân viên";
-            this.MaNV.MinimumWidth = 8;
-            this.MaNV.Name = "MaNV";
-            this.MaNV.Width = 140;
-            // 
-            // TenNV
-            // 
-            this.TenNV.DataPropertyName = "TenNV";
-            this.TenNV.HeaderText = "Tên nhân viên";
-            this.TenNV.MinimumWidth = 8;
-            this.TenNV.Name = "TenNV";
-            this.TenNV.Width = 140;
-            // 
-            // ChucVu
-            // 
-            this.ChucVu.DataPropertyName = "ChucVu";
-            this.ChucVu.HeaderText = "Chức vụ";
-            this.ChucVu.MinimumWidth = 8;
-            this.ChucVu.Name = "ChucVu";
-            this.ChucVu.Width = 140;
-            // 
-            // CMND
-            // 
-            this.CMND.DataPropertyName = "CMND";
-            this.CMND.HeaderText = "CMND";
-            this.CMND.MinimumWidth = 8;
-            this.CMND.Name = "CMND";
-            this.CMND.Width = 140;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới tính";
-            this.GioiTinh.MinimumWidth = 8;
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Width = 139;
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.DataPropertyName = "NgaySinh";
-            this.NgaySinh.HeaderText = "Ngày sinh";
-            this.NgaySinh.MinimumWidth = 8;
-            this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.Width = 140;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.MinimumWidth = 8;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 140;
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "SDT";
-            this.SDT.MinimumWidth = 8;
-            this.SDT.Name = "SDT";
-            this.SDT.Width = 140;
             // 
             // txtDiaChi
             // 
@@ -376,7 +316,7 @@ namespace QLCHMP.Interface
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1222, 111);
+            this.label7.Location = new System.Drawing.Point(1222, 98);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(105, 25);
             this.label7.TabIndex = 29;
@@ -403,7 +343,7 @@ namespace QLCHMP.Interface
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1222, 40);
+            this.label4.Location = new System.Drawing.Point(1222, 36);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 25);
             this.label4.TabIndex = 26;
@@ -423,6 +363,8 @@ namespace QLCHMP.Interface
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.cbbHSL);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.cbbChucVu);
             this.groupBox1.Controls.Add(this.dtNgaySinh);
             this.groupBox1.Controls.Add(this.panelGioiTinh);
@@ -468,6 +410,101 @@ namespace QLCHMP.Interface
             this.label1.Size = new System.Drawing.Size(396, 40);
             this.label1.TabIndex = 8;
             this.label1.Text = "QUẢN LÝ NHÂN VIÊN";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(1222, 164);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(122, 25);
+            this.label11.TabIndex = 47;
+            this.label11.Text = "Hệ số lương:";
+            // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.HeaderText = "Mã nhân viên";
+            this.MaNV.MinimumWidth = 8;
+            this.MaNV.Name = "MaNV";
+            // 
+            // TenNV
+            // 
+            this.TenNV.DataPropertyName = "TenNV";
+            this.TenNV.HeaderText = "Tên nhân viên";
+            this.TenNV.MinimumWidth = 8;
+            this.TenNV.Name = "TenNV";
+            this.TenNV.Width = 140;
+            // 
+            // ChucVu
+            // 
+            this.ChucVu.DataPropertyName = "ChucVu";
+            this.ChucVu.HeaderText = "Chức vụ";
+            this.ChucVu.MinimumWidth = 8;
+            this.ChucVu.Name = "ChucVu";
+            this.ChucVu.Width = 140;
+            // 
+            // CMND
+            // 
+            this.CMND.DataPropertyName = "CMND";
+            this.CMND.HeaderText = "CMND";
+            this.CMND.MinimumWidth = 8;
+            this.CMND.Name = "CMND";
+            this.CMND.Width = 140;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.MinimumWidth = 8;
+            this.GioiTinh.Name = "GioiTinh";
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "Ngày sinh";
+            this.NgaySinh.MinimumWidth = 8;
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.Width = 120;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 8;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 160;
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "SDT";
+            this.SDT.MinimumWidth = 8;
+            this.SDT.Name = "SDT";
+            this.SDT.Width = 140;
+            // 
+            // HeSoLuong
+            // 
+            this.HeSoLuong.DataPropertyName = "HeSoLuong";
+            this.HeSoLuong.HeaderText = "Hệ số lương";
+            this.HeSoLuong.MinimumWidth = 8;
+            this.HeSoLuong.Name = "HeSoLuong";
+            this.HeSoLuong.Width = 77;
+            // 
+            // cbbHSL
+            // 
+            this.cbbHSL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbHSL.FormattingEnabled = true;
+            this.cbbHSL.Items.AddRange(new object[] {
+            "1",
+            "1.5",
+            "2",
+            "2.5",
+            "3",
+            "3.5"});
+            this.cbbHSL.Location = new System.Drawing.Point(1416, 161);
+            this.cbbHSL.Name = "cbbHSL";
+            this.cbbHSL.Size = new System.Drawing.Size(116, 33);
+            this.cbbHSL.TabIndex = 48;
             // 
             // frmNhanVien
             // 
@@ -516,14 +553,6 @@ namespace QLCHMP.Interface
         private System.Windows.Forms.Panel panelGioiTinh;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dgvNhanVien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ChucVu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CMND;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtCMND;
@@ -537,5 +566,16 @@ namespace QLCHMP.Interface
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ChucVu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CMND;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeSoLuong;
+        private System.Windows.Forms.ComboBox cbbHSL;
     }
 }

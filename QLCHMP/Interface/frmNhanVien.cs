@@ -31,7 +31,7 @@ namespace QLCHMP.Interface
             dtNgaySinh.Refresh();
             txtDiaChi.Clear();
             txtSDT.Clear();
-
+            cbbHSL.Refresh();
         }
 
         private void setLock(bool e)
@@ -44,12 +44,12 @@ namespace QLCHMP.Interface
             dtNgaySinh.Enabled = !e;
             txtDiaChi.Enabled = !e;
             txtSDT.Enabled = !e;
-
+            cbbHSL.Enabled = !e;
         }
 
         private void showData()
         {
-            String con_str = "Data Source = DESKTOP-68U13L4\\SQLEXPRESS;Initial Catalog=QL_CHMyPham;Integrated Security=True";
+            String con_str = "Data Source = DESKTOP-68U13L4\\SQLEXPRESS;Initial Catalog=QL_CHMP;Integrated Security=True";
 
             try
             {
@@ -80,8 +80,9 @@ namespace QLCHMP.Interface
             DateTime ns = dtNgaySinh.Value;
             String dc = txtDiaChi.Text;
             String sdt = txtSDT.Text;
+            String hsl = cbbHSL.Text;
 
-            String sql = "Select count(*) from NhanVien where MaNV = @manv and TenNV = @tennv and ChucVu = @cv and CMND = @cmnd and GioiTinh = @gt and NgaySinh = @ns and DiaChi = @dc and SDT = @sdt";
+            String sql = "Select count(*) from NhanVien where MaNV = @manv and TenNV = @tennv and ChucVu = @cv and CMND = @cmnd and GioiTinh = @gt and NgaySinh = @ns and DiaChi = @dc and SDT = @sdt and HeSoLuong = @hsl";
             List<SqlParameter> data = new List<SqlParameter>();
             data.Add(new SqlParameter("@manv", manv));
             data.Add(new SqlParameter("@tennv", tennv));
@@ -91,6 +92,7 @@ namespace QLCHMP.Interface
             data.Add(new SqlParameter("@ns", ns));
             data.Add(new SqlParameter("@dc", dc));
             data.Add(new SqlParameter("@sdt", sdt));
+            data.Add(new SqlParameter("@hsl", hsl));
 
             int rs = conn.CountData(sql, data);
             return rs;
@@ -108,7 +110,7 @@ namespace QLCHMP.Interface
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            String con_str = "Data Source = DESKTOP-68U13L4\\SQLEXPRESS;Initial Catalog=QL_CHMyPham;Integrated Security=True";
+            String con_str = "Data Source = DESKTOP-68U13L4\\SQLEXPRESS;Initial Catalog=QL_CHMP;Integrated Security=True";
             String tennv = txtSearch.Text;
             try
             {
@@ -149,6 +151,7 @@ namespace QLCHMP.Interface
                     DateTime ns = dtNgaySinh.Value;
                     String dc = txtDiaChi.Text;
                     String sdt = txtSDT.Text;
+                    String hsl = cbbHSL.Text;
 
                     if (manv == "" || tennv == "" || cv == "" || cmnd == "" || dc == "" || sdt == "")
                     {
@@ -166,7 +169,7 @@ namespace QLCHMP.Interface
                     else
                     {
 
-                        String sql = "insert into NhanVien values (@manv, @tennv, @cv, @cmnd, @gt, @ns, @dc, @sdt)";
+                        String sql = "insert into NhanVien values (@manv, @tennv, @cv, @cmnd, @gt, @ns, @dc, @sdt, @hsl)";
 
                         List<SqlParameter> data = new List<SqlParameter>();
                         data.Add(new SqlParameter("@manv", manv));
@@ -177,6 +180,8 @@ namespace QLCHMP.Interface
                         data.Add(new SqlParameter("@ns", ns));
                         data.Add(new SqlParameter("@dc", dc));
                         data.Add(new SqlParameter("@sdt", sdt));
+                        data.Add(new SqlParameter("@hsl", hsl));
+
 
                         conn.UpdateData(sql, data);
 
@@ -198,12 +203,12 @@ namespace QLCHMP.Interface
             if (txtMaNV.Enabled == true)
             {
                 txtMaNV.Enabled = false;
-                clearText();
+                //clearText();
             }
             else if (txtMaNV.Enabled == false && txtTenNV.Enabled == false)
             {
                 setLock(false);
-                clearText();
+                //clearText();
                 txtMaNV.Enabled = false;
             }
             else
@@ -223,7 +228,7 @@ namespace QLCHMP.Interface
                     {
                         try
                         {
-                            String sql = "Update NhanVien set TenNV = @TenNV, ChucVu = @ChucVu, CMND = @CMND, GioiTinh = @GioiTinh, NgaySinh = @NgaySinh, DiaChi = @DiaChi, SDT = @SDT where MaNV = @MaNV";
+                            String sql = "Update NhanVien set TenNV = @TenNV, ChucVu = @ChucVu, CMND = @CMND, GioiTinh = @GioiTinh, NgaySinh = @NgaySinh, DiaChi = @DiaChi, SDT = @SDT, HeSoLuong = @hsl where MaNV = @MaNV";
                             String MaNV = txtMaNV.Text;
                             String TenNV = txtTenNV.Text;
                             String ChucVu = cbbChucVu.Text;
@@ -232,7 +237,7 @@ namespace QLCHMP.Interface
                             DateTime NgaySinh = dtNgaySinh.Value;
                             String DiaChi = txtDiaChi.Text;
                             String SDT = txtSDT.Text;
-
+                            String hsl = cbbHSL.Text;
 
 
                             List<SqlParameter> data = new List<SqlParameter>();
@@ -244,6 +249,7 @@ namespace QLCHMP.Interface
                             data.Add(new SqlParameter("@NgaySinh", NgaySinh));
                             data.Add(new SqlParameter("@DiaChi", DiaChi));
                             data.Add(new SqlParameter("@SDT", SDT));
+                            data.Add(new SqlParameter("@hsl", hsl));
 
                             conn.UpdateData(sql, data);
 
@@ -359,7 +365,7 @@ namespace QLCHMP.Interface
                 dtNgaySinh.Text = row.Cells[5].Value.ToString();
                 txtDiaChi.Text = row.Cells[6].Value.ToString();
                 txtSDT.Text = row.Cells[7].Value.ToString();
-
+                cbbHSL.Text = row.Cells[8].Value.ToString();
 
 
                 //Không cho phép sửa trường STT
