@@ -28,6 +28,7 @@ namespace QLCHMP.Interface
             txtTenSP.Enabled = !e;
             txtSoLuong.Enabled = !e;
             txtGiaBan.Enabled = !e;
+            txtGiaNhap.Enabled = !e;
             txtNhaCC.Enabled = !e;
         }
 
@@ -38,6 +39,7 @@ namespace QLCHMP.Interface
             txtTenSP.Clear();
             txtSoLuong.Clear();
             txtGiaBan.Clear();
+            txtGiaNhap.Clear();
             txtNhaCC.Clear();
 
         }
@@ -121,82 +123,40 @@ namespace QLCHMP.Interface
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            try
+            if (txtMaSP.Enabled == false)
             {
-                String masp = txtMaSP.Text;
-                String malsp = cbbMaLSP.Text;
-                String tensp = txtTenSP.Text;
-                String soluong = txtSoLuong.Text;
-                String giaban = txtGiaBan.Text;
-                String nhacc = txtNhaCC.Text;
-
-                if (masp == "" || malsp == "" || tensp == "" || soluong == "" || giaban == "" || nhacc == "")
-                {
-                    MessageBox.Show("Vui lòng nhập đủ thông tin!");
-                }
-                else if (txtMaSP.Text.Length > 10)
-                {
-                    MessageBox.Show("Mã sản phẩm không quá 10 ký tự!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
-                else if (checkDataSanPham() == 1)
-                {
-                    MessageBox.Show("Mã sản phẩm đã tồn tại!");
-                }
-                else
-                {
-
-                    String sql = "insert into SanPham values (@masp, @malsp, @tensp, @soluong, @giaban, @nhacc)";
-
-                    List<SqlParameter> data = new List<SqlParameter>();
-                    data.Add(new SqlParameter("@masp", masp));
-                    data.Add(new SqlParameter("@malsp", malsp));
-                    data.Add(new SqlParameter("@tensp", tensp));
-                    data.Add(new SqlParameter("@soluong", soluong));
-                    data.Add(new SqlParameter("@giaban", giaban));
-                    data.Add(new SqlParameter("@nhacc", nhacc));
-
-
-                    conn.UpdateData(sql, data);
-
-                    MessageBox.Show("Thêm thành công!");
-                    showDataSanPham();
-                    clearText();
-                    showcbb();
-                }
+                setLock(false);
+                clearText();
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Thêm không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show("errThem: " + ex.Message);
-            }
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            String masp = txtMaSP.Text;
-            String malsp = cbbMaLSP.Text;
-            String tensp = txtTenSP.Text;
-            String soluong = txtSoLuong.Text;
-            String giaban = txtGiaBan.Text;
-            String nhacc = txtNhaCC.Text;
-
-            if (masp == "" || malsp == "" || tensp == "" || soluong == "" || giaban == "" || nhacc == "")
-            {
-                MessageBox.Show("Vui lòng sản phẩm cần sửa và nhập đầy đủ!");
-            }
-            //else if (checkDataLoaiSP() == 1)
-            //{
-            //    MessageBox.Show("Thông tin loại sản phẩm bị trùng lặp!");
-            //}
             else
             {
-                DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn sửa?", "Xác nhận sửa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
+                try
                 {
-                    try
+                    String masp = txtMaSP.Text;
+                    String malsp = cbbMaLSP.Text;
+                    String tensp = txtTenSP.Text;
+                    String soluong = txtSoLuong.Text;
+                    String giaban = txtGiaBan.Text;
+                    String gianhap = txtGiaNhap.Text;
+                    String nhacc = txtNhaCC.Text;
+
+                    if (masp == "" || malsp == "" || tensp == "" || soluong == "" || giaban == "" || gianhap == "" || nhacc == "")
                     {
-                        String sql = "Update SanPham set MaLoaiSP = @malsp, TenSP = @tensp, SoLuong = @soluong, GiaBan = @giaban, NhaCungCap = @nhacc where MaSP= @masp";
+                        MessageBox.Show("Vui lòng nhập đủ thông tin!");
+                    }
+                    else if (txtMaSP.Text.Length > 10)
+                    {
+                        MessageBox.Show("Mã sản phẩm không quá 10 ký tự!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                    else if (checkDataSanPham() == 1)
+                    {
+                        MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                    }
+                    else
+                    {
+
+                        String sql = "insert into SanPham values (@masp, @malsp, @tensp, @soluong, @giaban, @gianhap ,@nhacc)";
 
                         List<SqlParameter> data = new List<SqlParameter>();
                         data.Add(new SqlParameter("@masp", masp));
@@ -204,25 +164,88 @@ namespace QLCHMP.Interface
                         data.Add(new SqlParameter("@tensp", tensp));
                         data.Add(new SqlParameter("@soluong", soluong));
                         data.Add(new SqlParameter("@giaban", giaban));
+                        data.Add(new SqlParameter("@gianhap", gianhap));
                         data.Add(new SqlParameter("@nhacc", nhacc));
+
 
                         conn.UpdateData(sql, data);
 
-                        MessageBox.Show("Sửa thông tin thành công!");
+                        MessageBox.Show("Thêm thành công!");
                         showDataSanPham();
                         clearText();
-
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Sửa không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        MessageBox.Show("errSua :" + ex.Message);
+                        showcbb();
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Thêm không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("errThem: " + ex.Message);
+                }
+            }
 
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (txtMaSP.Enabled == false)
+            {
+                setLock(false);
+                clearText();
+            }
+            else
+            {
+                String masp = txtMaSP.Text;
+                String malsp = cbbMaLSP.Text;
+                String tensp = txtTenSP.Text;
+                String soluong = txtSoLuong.Text;
+                String giaban = txtGiaBan.Text;
+                String gianhap = txtGiaNhap.Text;
+                String nhacc = txtNhaCC.Text;
+
+                if (masp == "" || malsp == "" || tensp == "" || soluong == "" || giaban == "" || gianhap == "" || nhacc == "")
+                {
+                    MessageBox.Show("Vui lòng sản phẩm cần sửa và nhập đầy đủ!");
+                }
+                //else if (checkDataLoaiSP() == 1)
+                //{
+                //    MessageBox.Show("Thông tin loại sản phẩm bị trùng lặp!");
+                //}
                 else
-                    return;
+                {
+                    DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn sửa?", "Xác nhận sửa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            String sql = "Update SanPham set MaLoaiSP = @malsp, TenSP = @tensp, SoLuong = @soluong, GiaBan = @giaban, GiaNhap = @gianhap, NhaCungCap = @nhacc where MaSP= @masp";
 
+                            List<SqlParameter> data = new List<SqlParameter>();
+                            data.Add(new SqlParameter("@masp", masp));
+                            data.Add(new SqlParameter("@malsp", malsp));
+                            data.Add(new SqlParameter("@tensp", tensp));
+                            data.Add(new SqlParameter("@soluong", soluong));
+                            data.Add(new SqlParameter("@giaban", giaban));
+                            data.Add(new SqlParameter("@gianhap", gianhap));
+                            data.Add(new SqlParameter("@nhacc", nhacc));
+
+                            conn.UpdateData(sql, data);
+
+                            MessageBox.Show("Sửa thông tin thành công!");
+                            showDataSanPham();
+                            clearText();
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Sửa không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("errSua :" + ex.Message);
+                        }
+                    }
+
+                    else
+                        return;
+
+                }
             }
         }
 
@@ -297,7 +320,8 @@ namespace QLCHMP.Interface
                 txtTenSP.Text = row.Cells[2].Value.ToString();
                 txtSoLuong.Text = row.Cells[3].Value.ToString();
                 txtGiaBan.Text = row.Cells[4].Value.ToString();
-                txtNhaCC.Text = row.Cells[5].Value.ToString();
+                txtGiaNhap.Text = row.Cells[5].Value.ToString();
+                txtNhaCC.Text = row.Cells[6].Value.ToString();
 
                 //txtMaSP.Enabled = false;
             }

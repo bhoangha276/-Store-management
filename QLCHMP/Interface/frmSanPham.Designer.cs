@@ -59,7 +59,10 @@ namespace QLCHMP.Interface
             this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NhaCungCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtGiaNhap = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSP)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -75,6 +78,7 @@ namespace QLCHMP.Interface
             this.TenSP,
             this.SoLuong,
             this.GiaBan,
+            this.GiaNhap,
             this.NhaCungCap});
             this.dgvSP.Location = new System.Drawing.Point(601, 96);
             this.dgvSP.Name = "dgvSP";
@@ -107,6 +111,8 @@ namespace QLCHMP.Interface
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.txtGiaNhap);
             this.groupBox2.Controls.Add(this.cbbMaLSP);
             this.groupBox2.Controls.Add(this.txtNhaCC);
             this.groupBox2.Controls.Add(this.txtGiaBan);
@@ -121,7 +127,7 @@ namespace QLCHMP.Interface
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(57, 96);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(538, 350);
+            this.groupBox2.Size = new System.Drawing.Size(538, 438);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sản phẩm";
@@ -137,10 +143,10 @@ namespace QLCHMP.Interface
             // 
             // txtNhaCC
             // 
-            this.txtNhaCC.Location = new System.Drawing.Point(215, 316);
+            this.txtNhaCC.Location = new System.Drawing.Point(215, 378);
             this.txtNhaCC.Name = "txtNhaCC";
             this.txtNhaCC.Size = new System.Drawing.Size(268, 26);
-            this.txtNhaCC.TabIndex = 6;
+            this.txtNhaCC.TabIndex = 7;
             // 
             // txtGiaBan
             // 
@@ -166,7 +172,7 @@ namespace QLCHMP.Interface
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(47, 322);
+            this.label9.Location = new System.Drawing.Point(43, 378);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(111, 20);
             this.label9.TabIndex = 7;
@@ -233,9 +239,9 @@ namespace QLCHMP.Interface
             this.groupBox3.Controls.Add(this.btnXoa);
             this.groupBox3.Controls.Add(this.btnSua);
             this.groupBox3.Controls.Add(this.btnThem);
-            this.groupBox3.Location = new System.Drawing.Point(57, 452);
+            this.groupBox3.Location = new System.Drawing.Point(57, 560);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(538, 474);
+            this.groupBox3.Size = new System.Drawing.Size(538, 366);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Các chức năng";
@@ -243,7 +249,7 @@ namespace QLCHMP.Interface
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(28, 45);
+            this.label10.Location = new System.Drawing.Point(28, 71);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(114, 20);
             this.label10.TabIndex = 44;
@@ -251,57 +257,57 @@ namespace QLCHMP.Interface
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(174, 45);
+            this.txtSearch.Location = new System.Drawing.Point(215, 71);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(192, 26);
-            this.txtSearch.TabIndex = 7;
+            this.txtSearch.TabIndex = 8;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(401, 37);
+            this.btnSearch.Location = new System.Drawing.Point(408, 70);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(76, 37);
-            this.btnSearch.TabIndex = 8;
+            this.btnSearch.TabIndex = 9;
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnLamMoi
             // 
-            this.btnLamMoi.Location = new System.Drawing.Point(219, 386);
+            this.btnLamMoi.Location = new System.Drawing.Point(401, 214);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(100, 55);
-            this.btnLamMoi.TabIndex = 12;
+            this.btnLamMoi.TabIndex = 13;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(219, 286);
+            this.btnXoa.Location = new System.Drawing.Point(284, 214);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 55);
-            this.btnXoa.TabIndex = 11;
+            this.btnXoa.TabIndex = 12;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(219, 197);
+            this.btnSua.Location = new System.Drawing.Point(163, 214);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(100, 55);
-            this.btnSua.TabIndex = 10;
+            this.btnSua.TabIndex = 11;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(219, 107);
+            this.btnThem.Location = new System.Drawing.Point(32, 214);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(100, 55);
-            this.btnThem.TabIndex = 9;
+            this.btnThem.TabIndex = 10;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -312,7 +318,6 @@ namespace QLCHMP.Interface
             this.MaSP.HeaderText = "Mã sản phẩm";
             this.MaSP.MinimumWidth = 8;
             this.MaSP.Name = "MaSP";
-            this.MaSP.Width = 120;
             // 
             // MaLSP
             // 
@@ -336,6 +341,7 @@ namespace QLCHMP.Interface
             this.SoLuong.HeaderText = "Số lượng";
             this.SoLuong.MinimumWidth = 8;
             this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 80;
             // 
             // GiaBan
             // 
@@ -343,7 +349,13 @@ namespace QLCHMP.Interface
             this.GiaBan.HeaderText = "Giá bán";
             this.GiaBan.MinimumWidth = 8;
             this.GiaBan.Name = "GiaBan";
-            this.GiaBan.Width = 150;
+            // 
+            // GiaNhap
+            // 
+            this.GiaNhap.DataPropertyName = "GiaNhap";
+            this.GiaNhap.HeaderText = "Giá nhập";
+            this.GiaNhap.MinimumWidth = 8;
+            this.GiaNhap.Name = "GiaNhap";
             // 
             // NhaCungCap
             // 
@@ -352,6 +364,22 @@ namespace QLCHMP.Interface
             this.NhaCungCap.MinimumWidth = 8;
             this.NhaCungCap.Name = "NhaCungCap";
             this.NhaCungCap.Width = 170;
+            // 
+            // txtGiaNhap
+            // 
+            this.txtGiaNhap.Location = new System.Drawing.Point(216, 318);
+            this.txtGiaNhap.Name = "txtGiaNhap";
+            this.txtGiaNhap.Size = new System.Drawing.Size(268, 26);
+            this.txtGiaNhap.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(47, 321);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Giá nhập:";
             // 
             // frmSanPham
             // 
@@ -411,6 +439,9 @@ namespace QLCHMP.Interface
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaNhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn NhaCungCap;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtGiaNhap;
     }
 }
