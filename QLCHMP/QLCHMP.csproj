@@ -137,17 +137,17 @@
     <Compile Include="Interface\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\frmReportHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmReportHoaDon.Designer.cs">
+      <DependentUpon>frmReportHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\frmSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interface\frmSanPham.Designer.cs">
       <DependentUpon>frmSanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Interface\frmThanhToan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interface\frmThanhToan.Designer.cs">
-      <DependentUpon>frmThanhToan.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\frmTinhLuong.cs">
       <SubType>Form</SubType>
@@ -204,9 +204,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\frmSanPham.resx">
       <DependentUpon>frmSanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interface\frmThanhToan.resx">
-      <DependentUpon>frmThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\frmTinhLuong.resx">
       <DependentUpon>frmTinhLuong.cs</DependentUpon>

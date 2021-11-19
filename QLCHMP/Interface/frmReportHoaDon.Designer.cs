@@ -1,7 +1,7 @@
 ﻿
 namespace QLCHMP.Interface
 {
-    partial class frmThanhToan
+    partial class frmReportHoaDon
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,10 @@ namespace QLCHMP.Interface
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThanhToan));
-            this.SuspendLayout();
-            // 
-            // frmThanhToan
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmThanhToan";
-            this.Text = "frmThanhToan";
-            this.ResumeLayout(false);
-
+            this.Text = "frmReportHoaDon";
         }
 
         #endregion

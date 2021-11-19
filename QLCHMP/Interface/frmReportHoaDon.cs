@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLCHMP.Interface
 {
-    public partial class frmThanhToan : Form
+    public partial class frmReportHoaDon : Form
     {
-        public frmThanhToan()
+        public frmReportHoaDon()
         {
             InitializeComponent();
         }
