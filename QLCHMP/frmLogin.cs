@@ -73,6 +73,17 @@ namespace QLCHMP
             Application.Exit();
         }
 
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDoiMatKhau dmk = new frmDoiMatKhau();
+            dmk.Show();
+        }
 
+        private void btnDangKi_Click(object sender, EventArgs e)
+        {
+            frmDangKi dky = new frmDangKi();
+            dky.Show();
+        }
     }
 }
