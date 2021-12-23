@@ -77,6 +77,12 @@
     <Compile Include="frmReportDoanhThu.Designer.cs">
       <DependentUpon>frmReportDoanhThu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportHoaDon.Designer.cs">
+      <DependentUpon>frmReportHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\frmBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,12 +167,6 @@
     <Compile Include="Interface\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interface\frmReportHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interface\frmReportHoaDon.Designer.cs">
-      <DependentUpon>frmReportHoaDon.cs</DependentUpon>
-    </Compile>
     <Compile Include="Interface\frmSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportDoanhThu.resx">
       <DependentUpon>frmReportDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportHoaDon.resx">
+      <DependentUpon>frmReportHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\frmBanHang.resx">
       <DependentUpon>frmBanHang.cs</DependentUpon>
@@ -241,6 +244,7 @@
       <DependentUpon>frmTinhLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\ReportDoanhThu.rdlc" />
+    <EmbeddedResource Include="Interface\ReportHoaDon.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

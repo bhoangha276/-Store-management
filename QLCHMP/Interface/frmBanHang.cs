@@ -242,28 +242,28 @@ namespace QLCHMP.Interface
 
                 ThemSP();
 
-                try
-                {
-                    String mahd = txtMaHD.Text;
-                    String masp = txtMaSP.Text;
+                //try
+                //{
+                //    String mahd = txtMaHD.Text;
+                //    String masp = txtMaSP.Text;
 
-                    String sql = "insert into ChiTietHD values (@mahd, @masp,  @soluong, @DonGia)";
+                //    String sql = "insert into ChiTietHD values (@mahd, @masp,  @soluong, @DonGia)";
 
-                    List<SqlParameter> data = new List<SqlParameter>();
-                    data.Add(new SqlParameter("@mahd", mahd));
-                    data.Add(new SqlParameter("@masp", masp));
-                    data.Add(new SqlParameter("@soluong", soluong));
-                    data.Add(new SqlParameter("@DonGia", DonGia));
+                //    List<SqlParameter> data = new List<SqlParameter>();
+                //    data.Add(new SqlParameter("@mahd", mahd));
+                //    data.Add(new SqlParameter("@masp", masp));
+                //    data.Add(new SqlParameter("@soluong", soluong));
+                //    data.Add(new SqlParameter("@DonGia", DonGia));
 
-                    conn.UpdateData(sql, data);
+                //    conn.UpdateData(sql, data);
 
 
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Thêm không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    MessageBox.Show("errThem: " + ex.Message);
-                }
+                //}
+                //catch (Exception ex)
+                //{
+                //    MessageBox.Show("Thêm không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    MessageBox.Show("errThem: " + ex.Message);
+                //}
             }
         }
 
@@ -275,29 +275,29 @@ namespace QLCHMP.Interface
                 dgvChiTietHD.Rows.RemoveAt(item.Index);
             }
             TongTien();
-            try
-            {
-                String mahd = txtMaHD.Text;
-                String masp = txtMaSP.Text;
-                int soluong = Convert.ToInt32(numericUpDownSLBan.Text);
-                int giaban = Convert.ToInt32(txtGiaBan.Text);
-                int DonGia = soluong * giaban;
+            //try
+            //{
+            //    String mahd = txtMaHD.Text;
+            //    String masp = txtMaSP.Text;
+            //    int soluong = Convert.ToInt32(numericUpDownSLBan.Text);
+            //    int giaban = Convert.ToInt32(txtGiaBan.Text);
+            //    int DonGia = soluong * giaban;
 
-                String sql = "delete ChiTietHD where MaHD = @mahd and MaSanPham = @MaSP and SL= @soluong and DonGia = @DonGia";
+            //    String sql = "delete ChiTietHD where MaHD = @mahd and MaSanPham = @MaSP and SL= @soluong and DonGia = @DonGia";
 
-                List<SqlParameter> data = new List<SqlParameter>();
-                data.Add(new SqlParameter("@mahd", mahd));
-                data.Add(new SqlParameter("@masp", masp));
-                data.Add(new SqlParameter("@soluong", soluong));
-                data.Add(new SqlParameter("@DonGia", DonGia));
+            //    List<SqlParameter> data = new List<SqlParameter>();
+            //    data.Add(new SqlParameter("@mahd", mahd));
+            //    data.Add(new SqlParameter("@masp", masp));
+            //    data.Add(new SqlParameter("@soluong", soluong));
+            //    data.Add(new SqlParameter("@DonGia", DonGia));
 
-                conn.UpdateData(sql, data);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Thêm không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show("errThem: " + ex.Message);
-            }
+            //    conn.UpdateData(sql, data);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Thêm không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    MessageBox.Show("errThem: " + ex.Message);
+            //}
         }
 
         private void btnInHD_Click(object sender, EventArgs e)
@@ -341,6 +341,7 @@ namespace QLCHMP.Interface
                         String sql = "insert into HoaDon values (@mahd, @manv, @ngayban, @tenkh, @tongtien)";
                         try
                         {
+                            //////
                             List<SqlParameter> data = new List<SqlParameter>();
                             data.Add(new SqlParameter("@mahd", mahd));
                             data.Add(new SqlParameter("@manv", manv));
