@@ -20,7 +20,14 @@ namespace QLCHMP
         private void frmReportHoaDon_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'QL_CHMPDataSet.ChiTietHD' table. You can move, or remove it, as needed.
-            this.ChiTietHDTableAdapter.Fill(this.QL_CHMPDataSet.ChiTietHD);
+            //this.ChiTietHDTableAdapter.Fill(this.QL_CHMPDataSet.ChiTietHD);
+
+            //this.reportViewer1.RefreshReport();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            this.ChiTietHDTableAdapter.Fill(this.QL_CHMPDataSet.ChiTietHD, txtSearch.Text);
 
             this.reportViewer1.RefreshReport();
         }

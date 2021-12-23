@@ -3731,16 +3731,23 @@ namespace QLCHMP.QL_CHMPDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT MaHD, MaSanPham, SL, DonGia FROM dbo.ChiTietHD";
+            this._commandCollection[0].CommandText = "SELECT MaHD, MaSanPham, SL, DonGia FROM dbo.ChiTietHD WHERE MaHD = @mahd";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mahd", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "MaHD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QL_CHMPDataSet.ChiTietHDDataTable dataTable) {
+        public virtual int Fill(QL_CHMPDataSet.ChiTietHDDataTable dataTable, string mahd) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((mahd == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(mahd));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -3752,8 +3759,14 @@ namespace QLCHMP.QL_CHMPDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QL_CHMPDataSet.ChiTietHDDataTable GetData() {
+        public virtual QL_CHMPDataSet.ChiTietHDDataTable GetData(string mahd) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((mahd == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(mahd));
+            }
             QL_CHMPDataSet.ChiTietHDDataTable dataTable = new QL_CHMPDataSet.ChiTietHDDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
