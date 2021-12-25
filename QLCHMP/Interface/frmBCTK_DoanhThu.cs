@@ -105,5 +105,32 @@ namespace QLCHMP.Interface
             this.Dispose();
         }
 
+        SqlConnection cn = new SqlConnection(@"Data Source =DESKTOP-68U13L4\SQLEXPRESS; Initial Catalog = QL_CHMP; Integrated Security = True");
+        private void btnHienThi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sql = "select * from HoaDon";
+                DataTable dt = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+                cn.Open();
+                da.Fill(dt);
+                cn.Close();
+
+                chartDoanhThu.ChartAreas["ChartArea1"].AxisX.Title = "Ma HD";
+                chartDoanhThu.ChartAreas["ChartArea1"].AxisX.Title = "Tong tien";
+                chartDoanhThu.ChartAreas["ChartArea1"].AxisX.Interval = 1;
+
+                for (int i=0; i<dt.Rows.Count; i++)
+                {
+                    chartDoanhThu.Series["Tổng tiền"].Points.AddXY(dt.Rows[i]["MaHD"], dt.Rows[i]["TongTien"]);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("err_HienThi: " + ex.Message);
+            }
+        }
     }
 }
