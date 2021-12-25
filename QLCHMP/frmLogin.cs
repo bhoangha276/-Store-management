@@ -22,7 +22,7 @@ namespace QLCHMP
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void frmLogin_Load(object sender, EventArgs e)
         {
             this.KeyPreview = true;
             this.KeyDown += btnDangNhap_KeyUp;
@@ -34,7 +34,6 @@ namespace QLCHMP
             {
                 btnDangNhap_Click(sender, e);
             }
-
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -66,24 +65,17 @@ namespace QLCHMP
                 }
 
             }
-    }
-
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnDoiMK_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmDoiMatKhau dmk = new frmDoiMatKhau();
-            dmk.Show();
         }
 
         private void btnDangKi_Click(object sender, EventArgs e)
         {
-            frmDangKi dky = new frmDangKi();
-            dky.Show();
+            frmDangKi frmDK = new frmDangKi();
+            frmDK.Show();
+        }
+
+        private void lbQuenMK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

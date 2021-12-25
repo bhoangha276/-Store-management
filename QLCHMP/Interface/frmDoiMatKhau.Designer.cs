@@ -29,130 +29,226 @@ namespace QLCHMP.Interface
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDoiMatKhau));
-            this.butdoimatkhau = new System.Windows.Forms.Button();
-            this.butthoatdmk = new System.Windows.Forms.Button();
+            this.txtMKMoi2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMKMoi1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtMKCu = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTK = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnDoiMK = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtnhaplaimatkhau = new System.Windows.Forms.TextBox();
-            this.txtmatkhaucu = new System.Windows.Forms.TextBox();
-            this.txtmatkhaumoi = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // butdoimatkhau
+            // txtMKMoi2
             // 
-            this.butdoimatkhau.Location = new System.Drawing.Point(431, 286);
-            this.butdoimatkhau.Name = "butdoimatkhau";
-            this.butdoimatkhau.Size = new System.Drawing.Size(139, 33);
-            this.butdoimatkhau.TabIndex = 30;
-            this.butdoimatkhau.Text = "Đổi mật khẩu";
-            this.butdoimatkhau.UseVisualStyleBackColor = true;
-            this.butdoimatkhau.Click += new System.EventHandler(this.butdoimatkhau_Click);
+            this.txtMKMoi2.BorderRadius = 10;
+            this.txtMKMoi2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMKMoi2.DefaultText = "";
+            this.txtMKMoi2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMKMoi2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMKMoi2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKMoi2.DisabledState.Parent = this.txtMKMoi2;
+            this.txtMKMoi2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKMoi2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKMoi2.FocusedState.Parent = this.txtMKMoi2;
+            this.txtMKMoi2.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtMKMoi2.ForeColor = System.Drawing.Color.Black;
+            this.txtMKMoi2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKMoi2.HoverState.Parent = this.txtMKMoi2;
+            this.txtMKMoi2.Location = new System.Drawing.Point(559, 394);
+            this.txtMKMoi2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtMKMoi2.Name = "txtMKMoi2";
+            this.txtMKMoi2.PasswordChar = '\0';
+            this.txtMKMoi2.PlaceholderText = "Nhập mật khẩu...";
+            this.txtMKMoi2.SelectedText = "";
+            this.txtMKMoi2.ShadowDecoration.Parent = this.txtMKMoi2;
+            this.txtMKMoi2.Size = new System.Drawing.Size(334, 48);
+            this.txtMKMoi2.TabIndex = 42;
             // 
-            // butthoatdmk
+            // txtMKMoi1
             // 
-            this.butthoatdmk.Location = new System.Drawing.Point(317, 286);
-            this.butthoatdmk.Name = "butthoatdmk";
-            this.butthoatdmk.Size = new System.Drawing.Size(75, 33);
-            this.butthoatdmk.TabIndex = 29;
-            this.butthoatdmk.Text = "Thoát";
-            this.butthoatdmk.UseVisualStyleBackColor = true;
-            this.butthoatdmk.Click += new System.EventHandler(this.butthoatdmk_Click);
+            this.txtMKMoi1.BorderRadius = 10;
+            this.txtMKMoi1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMKMoi1.DefaultText = "";
+            this.txtMKMoi1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMKMoi1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMKMoi1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKMoi1.DisabledState.Parent = this.txtMKMoi1;
+            this.txtMKMoi1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKMoi1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKMoi1.FocusedState.Parent = this.txtMKMoi1;
+            this.txtMKMoi1.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtMKMoi1.ForeColor = System.Drawing.Color.Black;
+            this.txtMKMoi1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKMoi1.HoverState.Parent = this.txtMKMoi1;
+            this.txtMKMoi1.Location = new System.Drawing.Point(559, 301);
+            this.txtMKMoi1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtMKMoi1.Name = "txtMKMoi1";
+            this.txtMKMoi1.PasswordChar = '\0';
+            this.txtMKMoi1.PlaceholderText = "Nhập mật khẩu...";
+            this.txtMKMoi1.SelectedText = "";
+            this.txtMKMoi1.ShadowDecoration.Parent = this.txtMKMoi1;
+            this.txtMKMoi1.Size = new System.Drawing.Size(336, 48);
+            this.txtMKMoi1.TabIndex = 41;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(141, 217);
+            this.label4.Location = new System.Drawing.Point(555, 371);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 17);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Nhập lại mật khẩu";
+            this.label4.Size = new System.Drawing.Size(140, 20);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Nhập lại mật khẩu:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(555, 268);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(108, 20);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Mật khẩu mới:";
+            // 
+            // txtMKCu
+            // 
+            this.txtMKCu.BorderRadius = 10;
+            this.txtMKCu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMKCu.DefaultText = "";
+            this.txtMKCu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMKCu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMKCu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKCu.DisabledState.Parent = this.txtMKCu;
+            this.txtMKCu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKCu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKCu.FocusedState.Parent = this.txtMKCu;
+            this.txtMKCu.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtMKCu.ForeColor = System.Drawing.Color.Black;
+            this.txtMKCu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKCu.HoverState.Parent = this.txtMKCu;
+            this.txtMKCu.Location = new System.Drawing.Point(559, 199);
+            this.txtMKCu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtMKCu.Name = "txtMKCu";
+            this.txtMKCu.PasswordChar = '●';
+            this.txtMKCu.PlaceholderText = "Nhập mật khẩu...";
+            this.txtMKCu.SelectedText = "";
+            this.txtMKCu.ShadowDecoration.Parent = this.txtMKCu;
+            this.txtMKCu.Size = new System.Drawing.Size(334, 48);
+            this.txtMKCu.TabIndex = 38;
+            // 
+            // txtTK
+            // 
+            this.txtTK.BorderRadius = 10;
+            this.txtTK.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTK.DefaultText = "";
+            this.txtTK.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTK.DisabledState.Parent = this.txtTK;
+            this.txtTK.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTK.FocusedState.Parent = this.txtTK;
+            this.txtTK.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.txtTK.ForeColor = System.Drawing.Color.Black;
+            this.txtTK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTK.HoverState.Parent = this.txtTK;
+            this.txtTK.Location = new System.Drawing.Point(559, 106);
+            this.txtTK.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtTK.Name = "txtTK";
+            this.txtTK.PasswordChar = '\0';
+            this.txtTK.PlaceholderText = "Nhập tài khoản...";
+            this.txtTK.SelectedText = "";
+            this.txtTK.ShadowDecoration.Parent = this.txtTK;
+            this.txtTK.Size = new System.Drawing.Size(336, 48);
+            this.txtTK.TabIndex = 37;
+            // 
+            // btnDoiMK
+            // 
+            this.btnDoiMK.BorderRadius = 10;
+            this.btnDoiMK.CheckedState.Parent = this.btnDoiMK;
+            this.btnDoiMK.CustomImages.Parent = this.btnDoiMK;
+            this.btnDoiMK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDoiMK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDoiMK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDoiMK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDoiMK.DisabledState.Parent = this.btnDoiMK;
+            this.btnDoiMK.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDoiMK.ForeColor = System.Drawing.Color.White;
+            this.btnDoiMK.HoverState.Parent = this.btnDoiMK;
+            this.btnDoiMK.Location = new System.Drawing.Point(559, 482);
+            this.btnDoiMK.Name = "btnDoiMK";
+            this.btnDoiMK.ShadowDecoration.Parent = this.btnDoiMK;
+            this.btnDoiMK.Size = new System.Drawing.Size(334, 45);
+            this.btnDoiMK.TabIndex = 36;
+            this.btnDoiMK.Text = "Đổi mật khẩu";
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(141, 155);
+            this.label3.Location = new System.Drawing.Point(555, 176);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 17);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Mật khẩu mới";
+            this.label3.Size = new System.Drawing.Size(100, 20);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Mật khẩu cũ:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(141, 94);
+            this.label2.Location = new System.Drawing.Point(555, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 17);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Mật khẩu cũ";
+            this.label2.Size = new System.Drawing.Size(82, 20);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Tài khoản:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(141, 47);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(615, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 17);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Tên đăng nhập";
+            this.label1.Size = new System.Drawing.Size(227, 32);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "ĐỔI MẬT KHẨU";
             // 
-            // txtnhaplaimatkhau
+            // pictureBox1
             // 
-            this.txtnhaplaimatkhau.Location = new System.Drawing.Point(277, 217);
-            this.txtnhaplaimatkhau.Name = "txtnhaplaimatkhau";
-            this.txtnhaplaimatkhau.Size = new System.Drawing.Size(229, 22);
-            this.txtnhaplaimatkhau.TabIndex = 24;
-            // 
-            // txtmatkhaucu
-            // 
-            this.txtmatkhaucu.Location = new System.Drawing.Point(277, 89);
-            this.txtmatkhaucu.Name = "txtmatkhaucu";
-            this.txtmatkhaucu.Size = new System.Drawing.Size(229, 22);
-            this.txtmatkhaucu.TabIndex = 23;
-            // 
-            // txtmatkhaumoi
-            // 
-            this.txtmatkhaumoi.Location = new System.Drawing.Point(277, 150);
-            this.txtmatkhaumoi.Name = "txtmatkhaumoi";
-            this.txtmatkhaumoi.Size = new System.Drawing.Size(229, 22);
-            this.txtmatkhaumoi.TabIndex = 22;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(277, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 22);
-            this.textBox1.TabIndex = 21;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(504, 549);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
             // 
             // frmDoiMatKhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
-            this.Controls.Add(this.butdoimatkhau);
-            this.Controls.Add(this.butthoatdmk);
+            this.ClientSize = new System.Drawing.Size(935, 549);
+            this.Controls.Add(this.txtMKMoi2);
+            this.Controls.Add(this.txtMKMoi1);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtMKCu);
+            this.Controls.Add(this.txtTK);
+            this.Controls.Add(this.btnDoiMK);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtnhaplaimatkhau);
-            this.Controls.Add(this.txtmatkhaucu);
-            this.Controls.Add(this.txtmatkhaumoi);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmDoiMatKhau";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDoiMatKhau";
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,16 +256,16 @@ namespace QLCHMP.Interface
 
         #endregion
 
-        private System.Windows.Forms.Button butdoimatkhau;
-        private System.Windows.Forms.Button butthoatdmk;
+        private Guna.UI2.WinForms.Guna2TextBox txtMKMoi2;
+        private Guna.UI2.WinForms.Guna2TextBox txtMKMoi1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2TextBox txtMKCu;
+        private Guna.UI2.WinForms.Guna2TextBox txtTK;
+        private Guna.UI2.WinForms.Guna2Button btnDoiMK;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtnhaplaimatkhau;
-        private System.Windows.Forms.TextBox txtmatkhaucu;
-        private System.Windows.Forms.TextBox txtmatkhaumoi;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

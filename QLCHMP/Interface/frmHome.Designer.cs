@@ -30,231 +30,1079 @@ namespace QLCHMP.Interface
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.NhanVienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ThongTinNVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ChamCongNVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TinhLuongNVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.KhoHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LoaiSPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SanPhamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bctkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bctkSanPhamHotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bctkdoanhthuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bctkTongChiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bctkNhanVienToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.guna2ProgressBar2 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.btnNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.BtnHoTro = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnDangXuat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBanHang = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHoaDon = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBCTK = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BanHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DangXuatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ThoatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.HoaDonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.HoTroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.btnSanPham = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTrangChu = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2ProgressBar5 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2ProgressBar4 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.guna2ProgressBar3 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2GradientPanel5.SuspendLayout();
+            this.guna2GradientPanel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.guna2GradientPanel1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2GradientPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
+            this.guna2GradientPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.guna2GradientPanel6.SuspendLayout();
+            this.guna2GradientPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // guna2GradientPanel5
             // 
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.NhanVienToolStripMenuItem,
-            this.KhoHangToolStripMenuItem,
-            this.bctkToolStripMenuItem,
-            this.HoaDonToolStripMenuItem,
-            this.BanHangToolStripMenuItem,
-            this.DangXuatToolStripMenuItem,
-            this.ThoatToolStripMenuItem,
-            this.HoTroToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1213, 36);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.guna2GradientPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.guna2GradientPanel5.BorderRadius = 15;
+            this.guna2GradientPanel5.Controls.Add(this.label6);
+            this.guna2GradientPanel5.Controls.Add(this.guna2ProgressBar2);
+            this.guna2GradientPanel5.Controls.Add(this.label7);
+            this.guna2GradientPanel5.Controls.Add(this.label8);
+            this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(365, 78);
+            this.guna2GradientPanel5.Name = "guna2GradientPanel5";
+            this.guna2GradientPanel5.ShadowDecoration.Parent = this.guna2GradientPanel5;
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(254, 157);
+            this.guna2GradientPanel5.TabIndex = 13;
             // 
-            // NhanVienToolStripMenuItem
+            // label6
             // 
-            this.NhanVienToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ThongTinNVToolStripMenuItem,
-            this.ChamCongNVToolStripMenuItem,
-            this.TinhLuongNVToolStripMenuItem});
-            this.NhanVienToolStripMenuItem.Name = "NhanVienToolStripMenuItem";
-            this.NhanVienToolStripMenuItem.Size = new System.Drawing.Size(116, 32);
-            this.NhanVienToolStripMenuItem.Text = "Nhân viên";
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(14, 100);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 21);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "70%";
             // 
-            // ThongTinNVToolStripMenuItem
+            // guna2ProgressBar2
             // 
-            this.ThongTinNVToolStripMenuItem.Name = "ThongTinNVToolStripMenuItem";
-            this.ThongTinNVToolStripMenuItem.Size = new System.Drawing.Size(287, 36);
-            this.ThongTinNVToolStripMenuItem.Text = "Thông tin nhân viên";
-            this.ThongTinNVToolStripMenuItem.Click += new System.EventHandler(this.ThongTinNVToolStripMenuItem_Click);
+            this.guna2ProgressBar2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2ProgressBar2.Location = new System.Drawing.Point(14, 128);
+            this.guna2ProgressBar2.Name = "guna2ProgressBar2";
+            this.guna2ProgressBar2.ProgressColor = System.Drawing.Color.White;
+            this.guna2ProgressBar2.ProgressColor2 = System.Drawing.Color.White;
+            this.guna2ProgressBar2.ShadowDecoration.Parent = this.guna2ProgressBar2;
+            this.guna2ProgressBar2.Size = new System.Drawing.Size(226, 10);
+            this.guna2ProgressBar2.TabIndex = 6;
+            this.guna2ProgressBar2.Text = "guna2ProgressBar2";
+            this.guna2ProgressBar2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ProgressBar2.Value = 70;
             // 
-            // ChamCongNVToolStripMenuItem
+            // label7
             // 
-            this.ChamCongNVToolStripMenuItem.Name = "ChamCongNVToolStripMenuItem";
-            this.ChamCongNVToolStripMenuItem.Size = new System.Drawing.Size(287, 36);
-            this.ChamCongNVToolStripMenuItem.Text = "Chấm công";
-            this.ChamCongNVToolStripMenuItem.Click += new System.EventHandler(this.ChamCongNVToolStripMenuItem_Click);
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(13, 21);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 21);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Channel";
             // 
-            // TinhLuongNVToolStripMenuItem
+            // label8
             // 
-            this.TinhLuongNVToolStripMenuItem.Name = "TinhLuongNVToolStripMenuItem";
-            this.TinhLuongNVToolStripMenuItem.Size = new System.Drawing.Size(287, 36);
-            this.TinhLuongNVToolStripMenuItem.Text = "Tính lương";
-            this.TinhLuongNVToolStripMenuItem.Click += new System.EventHandler(this.TinhLuongNVToolStripMenuItem_Click);
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(13, 63);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(168, 28);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Today\'s Tasks";
             // 
-            // KhoHangToolStripMenuItem
+            // guna2GradientPanel4
             // 
-            this.KhoHangToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.LoaiSPToolStripMenuItem,
-            this.SanPhamToolStripMenuItem});
-            this.KhoHangToolStripMenuItem.Name = "KhoHangToolStripMenuItem";
-            this.KhoHangToolStripMenuItem.Size = new System.Drawing.Size(112, 32);
-            this.KhoHangToolStripMenuItem.Text = "Kho hàng";
+            this.guna2GradientPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.guna2GradientPanel4.BorderRadius = 15;
+            this.guna2GradientPanel4.Controls.Add(this.label5);
+            this.guna2GradientPanel4.Controls.Add(this.guna2ProgressBar1);
+            this.guna2GradientPanel4.Controls.Add(this.label4);
+            this.guna2GradientPanel4.Controls.Add(this.label3);
+            this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(90, 78);
+            this.guna2GradientPanel4.Name = "guna2GradientPanel4";
+            this.guna2GradientPanel4.ShadowDecoration.Parent = this.guna2GradientPanel4;
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(254, 157);
+            this.guna2GradientPanel4.TabIndex = 12;
             // 
-            // LoaiSPToolStripMenuItem
+            // label5
             // 
-            this.LoaiSPToolStripMenuItem.Name = "LoaiSPToolStripMenuItem";
-            this.LoaiSPToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
-            this.LoaiSPToolStripMenuItem.Text = "Loại sản phẩm";
-            this.LoaiSPToolStripMenuItem.Click += new System.EventHandler(this.LoaiSPToolStripMenuItem_Click);
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(14, 100);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 21);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "70%";
             // 
-            // SanPhamToolStripMenuItem
+            // guna2ProgressBar1
             // 
-            this.SanPhamToolStripMenuItem.Name = "SanPhamToolStripMenuItem";
-            this.SanPhamToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
-            this.SanPhamToolStripMenuItem.Text = "Sản phẩm";
-            this.SanPhamToolStripMenuItem.Click += new System.EventHandler(this.SanPhamToolStripMenuItem_Click);
+            this.guna2ProgressBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2ProgressBar1.Location = new System.Drawing.Point(14, 128);
+            this.guna2ProgressBar1.Name = "guna2ProgressBar1";
+            this.guna2ProgressBar1.ProgressColor = System.Drawing.Color.White;
+            this.guna2ProgressBar1.ProgressColor2 = System.Drawing.Color.White;
+            this.guna2ProgressBar1.ShadowDecoration.Parent = this.guna2ProgressBar1;
+            this.guna2ProgressBar1.Size = new System.Drawing.Size(226, 10);
+            this.guna2ProgressBar1.TabIndex = 6;
+            this.guna2ProgressBar1.Text = "guna2ProgressBar1";
+            this.guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ProgressBar1.Value = 70;
             // 
-            // bctkToolStripMenuItem
+            // label4
             // 
-            this.bctkToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bctkSanPhamHotToolStripMenuItem,
-            this.bctkdoanhthuToolStripMenuItem,
-            this.bctkTongChiToolStripMenuItem,
-            this.bctkNhanVienToolStripMenuItem1});
-            this.bctkToolStripMenuItem.Name = "bctkToolStripMenuItem";
-            this.bctkToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
-            this.bctkToolStripMenuItem.Text = "Báo cáo thống kê";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 21);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Channel";
             // 
-            // bctkSanPhamHotToolStripMenuItem
+            // label3
             // 
-            this.bctkSanPhamHotToolStripMenuItem.Name = "bctkSanPhamHotToolStripMenuItem";
-            this.bctkSanPhamHotToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
-            this.bctkSanPhamHotToolStripMenuItem.Text = "Sản phẩm Hot";
-            this.bctkSanPhamHotToolStripMenuItem.Click += new System.EventHandler(this.bctkSanPhamHotToolStripMenuItem_Click);
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(168, 28);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Today\'s Tasks";
             // 
-            // bctkdoanhthuToolStripMenuItem
+            // label2
             // 
-            this.bctkdoanhthuToolStripMenuItem.Name = "bctkdoanhthuToolStripMenuItem";
-            this.bctkdoanhthuToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
-            this.bctkdoanhthuToolStripMenuItem.Text = "Doanh thu";
-            this.bctkdoanhthuToolStripMenuItem.Click += new System.EventHandler(this.bctkdoanhthuToolStripMenuItem_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(85, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(229, 28);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Nhiệm vụ hôm nay";
             // 
-            // bctkTongChiToolStripMenuItem
+            // panel1
             // 
-            this.bctkTongChiToolStripMenuItem.Name = "bctkTongChiToolStripMenuItem";
-            this.bctkTongChiToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
-            this.bctkTongChiToolStripMenuItem.Text = "Chi tiêu";
-            this.bctkTongChiToolStripMenuItem.Click += new System.EventHandler(this.bctkTongChiToolStripMenuItem_Click);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(103, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1801, 62);
+            this.panel1.TabIndex = 2;
             // 
-            // bctkNhanVienToolStripMenuItem1
+            // lblTitle
             // 
-            this.bctkNhanVienToolStripMenuItem1.Name = "bctkNhanVienToolStripMenuItem1";
-            this.bctkNhanVienToolStripMenuItem1.Size = new System.Drawing.Size(270, 36);
-            this.bctkNhanVienToolStripMenuItem1.Text = "Nhân viên";
-            this.bctkNhanVienToolStripMenuItem1.Click += new System.EventHandler(this.bctkNhanVienToolStripMenuItem1_Click);
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(11, 15);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(204, 34);
+            this.lblTitle.TabIndex = 3;
+            this.lblTitle.Text = "KYO Authenic";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(133, 156);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(128, 28);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "Hoang Ha";
+            // 
+            // btnNhanVien
+            // 
+            this.btnNhanVien.CheckedState.Parent = this.btnNhanVien;
+            this.btnNhanVien.CustomImages.Parent = this.btnNhanVien;
+            this.btnNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNhanVien.DisabledState.Parent = this.btnNhanVien;
+            this.btnNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.btnNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnNhanVien.HoverState.Parent = this.btnNhanVien;
+            this.btnNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Image")));
+            this.btnNhanVien.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnNhanVien.Location = new System.Drawing.Point(3, 161);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.ShadowDecoration.Parent = this.btnNhanVien;
+            this.btnNhanVien.Size = new System.Drawing.Size(77, 77);
+            this.btnNhanVien.TabIndex = 3;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.guna2GradientPanel2.Controls.Add(this.guna2Button1);
+            this.guna2GradientPanel2.Controls.Add(this.BtnHoTro);
+            this.guna2GradientPanel2.Controls.Add(this.BtnDangXuat);
+            this.guna2GradientPanel2.Controls.Add(this.btnBanHang);
+            this.guna2GradientPanel2.Controls.Add(this.btnHoaDon);
+            this.guna2GradientPanel2.Controls.Add(this.btnBCTK);
+            this.guna2GradientPanel2.Controls.Add(this.pictureBox1);
+            this.guna2GradientPanel2.Controls.Add(this.btnSanPham);
+            this.guna2GradientPanel2.Controls.Add(this.btnNhanVien);
+            this.guna2GradientPanel2.Controls.Add(this.btnTrangChu);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(20, 20);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(83, 1010);
+            this.guna2GradientPanel2.TabIndex = 0;
+            // 
+            // BtnHoTro
+            // 
+            this.BtnHoTro.CheckedState.Parent = this.BtnHoTro;
+            this.BtnHoTro.CustomImages.Parent = this.BtnHoTro;
+            this.BtnHoTro.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnHoTro.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnHoTro.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnHoTro.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnHoTro.DisabledState.Parent = this.BtnHoTro;
+            this.BtnHoTro.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.BtnHoTro.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnHoTro.ForeColor = System.Drawing.Color.White;
+            this.BtnHoTro.HoverState.Parent = this.BtnHoTro;
+            this.BtnHoTro.Image = ((System.Drawing.Image)(resources.GetObject("BtnHoTro.Image")));
+            this.BtnHoTro.Location = new System.Drawing.Point(3, 659);
+            this.BtnHoTro.Name = "BtnHoTro";
+            this.BtnHoTro.ShadowDecoration.Parent = this.BtnHoTro;
+            this.BtnHoTro.Size = new System.Drawing.Size(77, 77);
+            this.BtnHoTro.TabIndex = 9;
+            this.BtnHoTro.Click += new System.EventHandler(this.BtnHoTro_Click);
+            // 
+            // BtnDangXuat
+            // 
+            this.BtnDangXuat.CheckedState.Parent = this.BtnDangXuat;
+            this.BtnDangXuat.CustomImages.Parent = this.BtnDangXuat;
+            this.BtnDangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnDangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnDangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnDangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnDangXuat.DisabledState.Parent = this.BtnDangXuat;
+            this.BtnDangXuat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.BtnDangXuat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnDangXuat.ForeColor = System.Drawing.Color.White;
+            this.BtnDangXuat.HoverState.Parent = this.BtnDangXuat;
+            this.BtnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("BtnDangXuat.Image")));
+            this.BtnDangXuat.ImageSize = new System.Drawing.Size(25, 25);
+            this.BtnDangXuat.Location = new System.Drawing.Point(3, 930);
+            this.BtnDangXuat.Name = "BtnDangXuat";
+            this.BtnDangXuat.ShadowDecoration.Parent = this.BtnDangXuat;
+            this.BtnDangXuat.Size = new System.Drawing.Size(77, 77);
+            this.BtnDangXuat.TabIndex = 10;
+            this.BtnDangXuat.Click += new System.EventHandler(this.BtnDangXuat_Click);
+            // 
+            // btnBanHang
+            // 
+            this.btnBanHang.CheckedState.Parent = this.btnBanHang;
+            this.btnBanHang.CustomImages.Parent = this.btnBanHang;
+            this.btnBanHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBanHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBanHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBanHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBanHang.DisabledState.Parent = this.btnBanHang;
+            this.btnBanHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.btnBanHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBanHang.ForeColor = System.Drawing.Color.White;
+            this.btnBanHang.HoverState.Parent = this.btnBanHang;
+            this.btnBanHang.Image = ((System.Drawing.Image)(resources.GetObject("btnBanHang.Image")));
+            this.btnBanHang.Location = new System.Drawing.Point(3, 493);
+            this.btnBanHang.Name = "btnBanHang";
+            this.btnBanHang.ShadowDecoration.Parent = this.btnBanHang;
+            this.btnBanHang.Size = new System.Drawing.Size(77, 77);
+            this.btnBanHang.TabIndex = 7;
+            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
+            // 
+            // btnHoaDon
+            // 
+            this.btnHoaDon.CheckedState.Parent = this.btnHoaDon;
+            this.btnHoaDon.CustomImages.Parent = this.btnHoaDon;
+            this.btnHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHoaDon.DisabledState.Parent = this.btnHoaDon;
+            this.btnHoaDon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.btnHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnHoaDon.HoverState.Parent = this.btnHoaDon;
+            this.btnHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnHoaDon.Image")));
+            this.btnHoaDon.Location = new System.Drawing.Point(3, 410);
+            this.btnHoaDon.Name = "btnHoaDon";
+            this.btnHoaDon.ShadowDecoration.Parent = this.btnHoaDon;
+            this.btnHoaDon.Size = new System.Drawing.Size(77, 77);
+            this.btnHoaDon.TabIndex = 6;
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
+            // 
+            // btnBCTK
+            // 
+            this.btnBCTK.CheckedState.Parent = this.btnBCTK;
+            this.btnBCTK.CustomImages.Parent = this.btnBCTK;
+            this.btnBCTK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBCTK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBCTK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBCTK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBCTK.DisabledState.Parent = this.btnBCTK;
+            this.btnBCTK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.btnBCTK.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBCTK.ForeColor = System.Drawing.Color.White;
+            this.btnBCTK.HoverState.Parent = this.btnBCTK;
+            this.btnBCTK.Image = ((System.Drawing.Image)(resources.GetObject("btnBCTK.Image")));
+            this.btnBCTK.Location = new System.Drawing.Point(3, 327);
+            this.btnBCTK.Name = "btnBCTK";
+            this.btnBCTK.ShadowDecoration.Parent = this.btnBCTK;
+            this.btnBCTK.Size = new System.Drawing.Size(77, 77);
+            this.btnBCTK.TabIndex = 5;
+            this.btnBCTK.Click += new System.EventHandler(this.btnBCTK_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-5, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1218, 609);
+            this.pictureBox1.Size = new System.Drawing.Size(78, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // BanHangToolStripMenuItem
+            // btnSanPham
             // 
-            this.BanHangToolStripMenuItem.Name = "BanHangToolStripMenuItem";
-            this.BanHangToolStripMenuItem.Size = new System.Drawing.Size(109, 32);
-            this.BanHangToolStripMenuItem.Text = "Bán hàng";
-            this.BanHangToolStripMenuItem.Click += new System.EventHandler(this.BanHangToolStripMenuItem_Click);
+            this.btnSanPham.CheckedState.Parent = this.btnSanPham;
+            this.btnSanPham.CustomImages.Parent = this.btnSanPham;
+            this.btnSanPham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSanPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSanPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSanPham.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSanPham.DisabledState.Parent = this.btnSanPham;
+            this.btnSanPham.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.btnSanPham.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSanPham.ForeColor = System.Drawing.Color.White;
+            this.btnSanPham.HoverState.Parent = this.btnSanPham;
+            this.btnSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPham.Image")));
+            this.btnSanPham.Location = new System.Drawing.Point(3, 244);
+            this.btnSanPham.Name = "btnSanPham";
+            this.btnSanPham.ShadowDecoration.Parent = this.btnSanPham;
+            this.btnSanPham.Size = new System.Drawing.Size(77, 77);
+            this.btnSanPham.TabIndex = 4;
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
-            // DangXuatToolStripMenuItem
+            // btnTrangChu
             // 
-            this.DangXuatToolStripMenuItem.Name = "DangXuatToolStripMenuItem";
-            this.DangXuatToolStripMenuItem.Size = new System.Drawing.Size(117, 32);
-            this.DangXuatToolStripMenuItem.Text = "Đăng xuất";
-            this.DangXuatToolStripMenuItem.Click += new System.EventHandler(this.DangXuatToolStripMenuItem_Click);
+            this.btnTrangChu.CheckedState.Parent = this.btnTrangChu;
+            this.btnTrangChu.CustomImages.Parent = this.btnTrangChu;
+            this.btnTrangChu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTrangChu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTrangChu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTrangChu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTrangChu.DisabledState.Parent = this.btnTrangChu;
+            this.btnTrangChu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.btnTrangChu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTrangChu.ForeColor = System.Drawing.Color.White;
+            this.btnTrangChu.HoverState.Parent = this.btnTrangChu;
+            this.btnTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangChu.Image")));
+            this.btnTrangChu.Location = new System.Drawing.Point(3, 79);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.ShadowDecoration.Parent = this.btnTrangChu;
+            this.btnTrangChu.Size = new System.Drawing.Size(77, 77);
+            this.btnTrangChu.TabIndex = 2;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
-            // ThoatToolStripMenuItem
+            // guna2GradientPanel1
             // 
-            this.ThoatToolStripMenuItem.Name = "ThoatToolStripMenuItem";
-            this.ThoatToolStripMenuItem.Size = new System.Drawing.Size(78, 32);
-            this.ThoatToolStripMenuItem.Text = "Thoát";
-            this.ThoatToolStripMenuItem.Click += new System.EventHandler(this.ThoatToolStripMenuItem_Click);
+            this.guna2GradientPanel1.Controls.Add(this.guna2Panel2);
+            this.guna2GradientPanel1.Controls.Add(this.guna2Panel1);
+            this.guna2GradientPanel1.Controls.Add(this.panel1);
+            this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel2);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Padding = new System.Windows.Forms.Padding(20);
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1924, 1050);
+            this.guna2GradientPanel1.TabIndex = 1;
             // 
-            // HoaDonToolStripMenuItem
+            // guna2Panel2
             // 
-            this.HoaDonToolStripMenuItem.Name = "HoaDonToolStripMenuItem";
-            this.HoaDonToolStripMenuItem.Size = new System.Drawing.Size(104, 32);
-            this.HoaDonToolStripMenuItem.Text = "Hóa đơn";
-            this.HoaDonToolStripMenuItem.Click += new System.EventHandler(this.HoaDonToolStripMenuItem_Click);
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel2.Location = new System.Drawing.Point(103, 82);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(212, 948);
+            this.guna2Panel2.TabIndex = 12;
             // 
-            // HoTroToolStripMenuItem
+            // guna2Panel1
             // 
-            this.HoTroToolStripMenuItem.Name = "HoTroToolStripMenuItem";
-            this.HoTroToolStripMenuItem.Size = new System.Drawing.Size(85, 32);
-            this.HoTroToolStripMenuItem.Text = "Hỗ trợ";
-            this.HoTroToolStripMenuItem.Click += new System.EventHandler(this.HoTroToolStripMenuItem_Click);
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.guna2Panel1.Controls.Add(this.guna2GradientPanel3);
+            this.guna2Panel1.Controls.Add(this.label29);
+            this.guna2Panel1.Controls.Add(this.guna2GradientPanel8);
+            this.guna2Panel1.Controls.Add(this.guna2GradientPanel7);
+            this.guna2Panel1.Controls.Add(this.label12);
+            this.guna2Panel1.Controls.Add(this.guna2GradientPanel6);
+            this.guna2Panel1.Controls.Add(this.guna2GradientPanel5);
+            this.guna2Panel1.Controls.Add(this.guna2GradientPanel4);
+            this.guna2Panel1.Controls.Add(this.label2);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel1.ForeColor = System.Drawing.Color.White;
+            this.guna2Panel1.Location = new System.Drawing.Point(324, 82);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(1580, 948);
+            this.guna2Panel1.TabIndex = 11;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(17, 912);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(158, 23);
+            this.label29.TabIndex = 4;
+            this.label29.Text = "#Create by Ha";
+            // 
+            // guna2GradientPanel8
+            // 
+            this.guna2GradientPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.guna2GradientPanel8.BorderRadius = 15;
+            this.guna2GradientPanel8.Controls.Add(this.guna2CirclePictureBox2);
+            this.guna2GradientPanel8.Controls.Add(this.guna2ProgressBar5);
+            this.guna2GradientPanel8.Controls.Add(this.label16);
+            this.guna2GradientPanel8.Controls.Add(this.label17);
+            this.guna2GradientPanel8.Controls.Add(this.label18);
+            this.guna2GradientPanel8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2GradientPanel8.Location = new System.Drawing.Point(511, 332);
+            this.guna2GradientPanel8.Name = "guna2GradientPanel8";
+            this.guna2GradientPanel8.ShadowDecoration.Parent = this.guna2GradientPanel8;
+            this.guna2GradientPanel8.Size = new System.Drawing.Size(380, 165);
+            this.guna2GradientPanel8.TabIndex = 17;
+            // 
+            // guna2CirclePictureBox2
+            // 
+            this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
+            this.guna2CirclePictureBox2.ImageRotate = 0F;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(25, 20);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(49, 49);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox2.TabIndex = 6;
+            this.guna2CirclePictureBox2.TabStop = false;
+            // 
+            // guna2ProgressBar5
+            // 
+            this.guna2ProgressBar5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2ProgressBar5.Location = new System.Drawing.Point(85, 133);
+            this.guna2ProgressBar5.Name = "guna2ProgressBar5";
+            this.guna2ProgressBar5.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(251)))), ((int)(((byte)(120)))));
+            this.guna2ProgressBar5.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(251)))), ((int)(((byte)(120)))));
+            this.guna2ProgressBar5.ShadowDecoration.Parent = this.guna2ProgressBar5;
+            this.guna2ProgressBar5.Size = new System.Drawing.Size(231, 5);
+            this.guna2ProgressBar5.TabIndex = 5;
+            this.guna2ProgressBar5.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ProgressBar5.Value = 78;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(91, 107);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 23);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "78%";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(81, 20);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(159, 21);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Voice Recording";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(80, 41);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(240, 28);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "For Udemy Lectures";
+            // 
+            // guna2GradientPanel7
+            // 
+            this.guna2GradientPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.guna2GradientPanel7.BorderRadius = 15;
+            this.guna2GradientPanel7.Controls.Add(this.guna2CirclePictureBox1);
+            this.guna2GradientPanel7.Controls.Add(this.guna2ProgressBar4);
+            this.guna2GradientPanel7.Controls.Add(this.label13);
+            this.guna2GradientPanel7.Controls.Add(this.label14);
+            this.guna2GradientPanel7.Controls.Add(this.label15);
+            this.guna2GradientPanel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2GradientPanel7.Location = new System.Drawing.Point(90, 332);
+            this.guna2GradientPanel7.Name = "guna2GradientPanel7";
+            this.guna2GradientPanel7.ShadowDecoration.Parent = this.guna2GradientPanel7;
+            this.guna2GradientPanel7.Size = new System.Drawing.Size(380, 165);
+            this.guna2GradientPanel7.TabIndex = 16;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(25, 20);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(49, 49);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 6;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // guna2ProgressBar4
+            // 
+            this.guna2ProgressBar4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2ProgressBar4.Location = new System.Drawing.Point(85, 133);
+            this.guna2ProgressBar4.Name = "guna2ProgressBar4";
+            this.guna2ProgressBar4.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(251)))), ((int)(((byte)(120)))));
+            this.guna2ProgressBar4.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(251)))), ((int)(((byte)(120)))));
+            this.guna2ProgressBar4.ShadowDecoration.Parent = this.guna2ProgressBar4;
+            this.guna2ProgressBar4.Size = new System.Drawing.Size(231, 5);
+            this.guna2ProgressBar4.TabIndex = 5;
+            this.guna2ProgressBar4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ProgressBar4.Value = 70;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(90, 107);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(48, 23);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "78%";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(81, 20);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(159, 21);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Voice Recording";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(80, 41);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(240, 28);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "For Udemy Lectures";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(95, 294);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(182, 28);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Dự án gần đây";
+            // 
+            // guna2GradientPanel6
+            // 
+            this.guna2GradientPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.guna2GradientPanel6.BorderRadius = 15;
+            this.guna2GradientPanel6.Controls.Add(this.label9);
+            this.guna2GradientPanel6.Controls.Add(this.guna2ProgressBar3);
+            this.guna2GradientPanel6.Controls.Add(this.label10);
+            this.guna2GradientPanel6.Controls.Add(this.label11);
+            this.guna2GradientPanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.guna2GradientPanel6.Location = new System.Drawing.Point(640, 78);
+            this.guna2GradientPanel6.Name = "guna2GradientPanel6";
+            this.guna2GradientPanel6.ShadowDecoration.Parent = this.guna2GradientPanel6;
+            this.guna2GradientPanel6.Size = new System.Drawing.Size(254, 157);
+            this.guna2GradientPanel6.TabIndex = 14;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(14, 100);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 21);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "70%";
+            // 
+            // guna2ProgressBar3
+            // 
+            this.guna2ProgressBar3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2ProgressBar3.Location = new System.Drawing.Point(14, 128);
+            this.guna2ProgressBar3.Name = "guna2ProgressBar3";
+            this.guna2ProgressBar3.ProgressColor = System.Drawing.Color.White;
+            this.guna2ProgressBar3.ProgressColor2 = System.Drawing.Color.White;
+            this.guna2ProgressBar3.ShadowDecoration.Parent = this.guna2ProgressBar3;
+            this.guna2ProgressBar3.Size = new System.Drawing.Size(226, 10);
+            this.guna2ProgressBar3.TabIndex = 6;
+            this.guna2ProgressBar3.Text = "guna2ProgressBar3";
+            this.guna2ProgressBar3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ProgressBar3.Value = 70;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(13, 21);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(85, 21);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Channel";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(24)))), ((int)(((byte)(18)))));
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(13, 63);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(168, 28);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Today\'s Tasks";
+            // 
+            // guna2GradientPanel3
+            // 
+            this.guna2GradientPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.guna2GradientPanel3.BorderRadius = 15;
+            this.guna2GradientPanel3.Controls.Add(this.guna2CircleProgressBar1);
+            this.guna2GradientPanel3.Controls.Add(this.panel5);
+            this.guna2GradientPanel3.Controls.Add(this.label19);
+            this.guna2GradientPanel3.Controls.Add(this.panel4);
+            this.guna2GradientPanel3.Controls.Add(this.panel3);
+            this.guna2GradientPanel3.Controls.Add(this.guna2Button5);
+            this.guna2GradientPanel3.Controls.Add(this.panel2);
+            this.guna2GradientPanel3.Controls.Add(this.label28);
+            this.guna2GradientPanel3.Controls.Add(this.label26);
+            this.guna2GradientPanel3.Controls.Add(this.label24);
+            this.guna2GradientPanel3.Controls.Add(this.label27);
+            this.guna2GradientPanel3.Controls.Add(this.label25);
+            this.guna2GradientPanel3.Controls.Add(this.label23);
+            this.guna2GradientPanel3.Controls.Add(this.guna2CirclePictureBox4);
+            this.guna2GradientPanel3.Controls.Add(this.label22);
+            this.guna2GradientPanel3.Controls.Add(this.label21);
+            this.guna2GradientPanel3.Controls.Add(this.label20);
+            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(1199, 0);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(381, 948);
+            this.guna2GradientPanel3.TabIndex = 18;
+            // 
+            // guna2CircleProgressBar1
+            // 
+            this.guna2CircleProgressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2CircleProgressBar1.FillThickness = 8;
+            this.guna2CircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2CircleProgressBar1.Location = new System.Drawing.Point(99, 292);
+            this.guna2CircleProgressBar1.Minimum = 0;
+            this.guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
+            this.guna2CircleProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(251)))), ((int)(((byte)(120)))));
+            this.guna2CircleProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(251)))), ((int)(((byte)(120)))));
+            this.guna2CircleProgressBar1.ProgressThickness = 8;
+            this.guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleProgressBar1.ShadowDecoration.Parent = this.guna2CircleProgressBar1;
+            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(90, 90);
+            this.guna2CircleProgressBar1.TabIndex = 8;
+            this.guna2CircleProgressBar1.Text = "guna2CircleProgressBar1";
+            this.guna2CircleProgressBar1.Value = 78;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(98, 502);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(210, 5);
+            this.panel5.TabIndex = 7;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(98, 458);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(210, 5);
+            this.panel4.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(98, 415);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(210, 5);
+            this.panel3.TabIndex = 7;
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.DisabledState.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
+            this.guna2Button5.Location = new System.Drawing.Point(259, 57);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(47, 47);
+            this.guna2Button5.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(98, 230);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(210, 5);
+            this.panel2.TabIndex = 7;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label28.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Red;
+            this.label28.Location = new System.Drawing.Point(277, 478);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(20, 22);
+            this.label28.TabIndex = 3;
+            this.label28.Text = "5";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(251)))), ((int)(((byte)(120)))));
+            this.label26.Location = new System.Drawing.Point(276, 435);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(30, 22);
+            this.label26.TabIndex = 3;
+            this.label26.Text = "20";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(251)))), ((int)(((byte)(120)))));
+            this.label24.Location = new System.Drawing.Point(276, 392);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(30, 22);
+            this.label24.TabIndex = 3;
+            this.label24.Text = "25";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(95, 479);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(135, 21);
+            this.label27.TabIndex = 3;
+            this.label27.Text = "Open Projects";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(95, 435);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(112, 21);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "Completed";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(95, 392);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(105, 21);
+            this.label23.TabIndex = 3;
+            this.label23.Text = "All Projects";
+            // 
+            // guna2CirclePictureBox4
+            // 
+            this.guna2CirclePictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2CirclePictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox4.Image")));
+            this.guna2CirclePictureBox4.ImageRotate = 0F;
+            this.guna2CirclePictureBox4.Location = new System.Drawing.Point(158, 78);
+            this.guna2CirclePictureBox4.Name = "guna2CirclePictureBox4";
+            this.guna2CirclePictureBox4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox4.ShadowDecoration.Parent = this.guna2CirclePictureBox4;
+            this.guna2CirclePictureBox4.Size = new System.Drawing.Size(75, 75);
+            this.guna2CirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox4.TabIndex = 6;
+            this.guna2CirclePictureBox4.TabStop = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(251)))), ((int)(((byte)(120)))));
+            this.label22.Location = new System.Drawing.Point(217, 311);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(89, 46);
+            this.label22.TabIndex = 3;
+            this.label22.Text = "Finished\r\nprojects";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(96, 256);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(90, 23);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "Progress";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(156, 193);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(77, 23);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "ADMIN";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button1.Location = new System.Drawing.Point(3, 576);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(77, 77);
+            this.guna2Button1.TabIndex = 8;
             // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1213, 635);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.menuStrip1);
-            this.ForeColor = System.Drawing.Color.Navy;
+            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.Controls.Add(this.guna2GradientPanel1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmHome";
             this.Text = "Hệ thống";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.guna2GradientPanel5.ResumeLayout(false);
+            this.guna2GradientPanel5.PerformLayout();
+            this.guna2GradientPanel4.ResumeLayout(false);
+            this.guna2GradientPanel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            this.guna2GradientPanel8.ResumeLayout(false);
+            this.guna2GradientPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
+            this.guna2GradientPanel7.ResumeLayout(false);
+            this.guna2GradientPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.guna2GradientPanel6.ResumeLayout(false);
+            this.guna2GradientPanel6.PerformLayout();
+            this.guna2GradientPanel3.ResumeLayout(false);
+            this.guna2GradientPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem NhanVienToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ThongTinNVToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ChamCongNVToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem TinhLuongNVToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem KhoHangToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem LoaiSPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem SanPhamToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bctkToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bctkSanPhamHotToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bctkdoanhthuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bctkTongChiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bctkNhanVienToolStripMenuItem1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label label19;
+        private Guna.UI2.WinForms.Guna2Button btnNhanVien;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private Guna.UI2.WinForms.Guna2Button BtnHoTro;
+        private Guna.UI2.WinForms.Guna2Button BtnDangXuat;
+        private Guna.UI2.WinForms.Guna2Button btnBanHang;
+        private Guna.UI2.WinForms.Guna2Button btnHoaDon;
+        private Guna.UI2.WinForms.Guna2Button btnBCTK;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem BanHangToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem DangXuatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ThoatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem HoaDonToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem HoTroToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2Button btnSanPham;
+        private Guna.UI2.WinForms.Guna2Button btnTrangChu;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label29;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
+        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar5;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel7;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar4;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel6;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label23;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox4;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

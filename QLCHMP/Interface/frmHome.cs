@@ -17,88 +17,57 @@ namespace QLCHMP.Interface
             InitializeComponent();
         }
 
-        private void ThongTinNVToolStripMenuItem_Click(object sender, EventArgs e)
+        public void OpenChildForm(Form childForm, object btnSender)
         {
-            frmNhanVien frm = new frmNhanVien();
-            frm.Show();
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.guna2Panel2.Controls.Add(childForm);
+            this.guna2Panel2.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
-        private void ChamCongNVToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnTrangChu_Click(object sender, EventArgs e)
         {
-            frmChamCong frm = new frmChamCong();
-            frm.Show();
+
         }
 
-        private void TinhLuongNVToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnNhanVien_Click(object sender, EventArgs e)
         {
-            frmTinhLuong frm = new frmTinhLuong();
-            frm.Show();
+            OpenChildForm(new frmCNNhanVien(), sender);
         }
 
-        private void LoaiSPToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnSanPham_Click(object sender, EventArgs e)
         {
-            frmLoaiSP frm = new frmLoaiSP();
-            frm.Show();
+            OpenChildForm(new frmCNKhoHang(), sender);
         }
 
-        private void SanPhamToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnBCTK_Click(object sender, EventArgs e)
         {
-            frmSanPham frm = new frmSanPham();
-            frm.Show();
+            OpenChildForm(new frmCNBCTK(), sender);
         }
 
-        private void bctkSanPhamHotToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            frmBCTK_SanPhamHot frm = new frmBCTK_SanPhamHot();
-            frm.Show();
+            OpenChildForm(new frmCNHoaDon(), sender);
         }
 
-        private void bctkdoanhthuToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnBanHang_Click(object sender, EventArgs e)
         {
-            frmBCTK_DoanhThu frm = new frmBCTK_DoanhThu();
-            frm.Show();
+            OpenChildForm(new frmCNBanHang(), sender);
         }
 
-        private void bctkTongChiToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmBCTK_TongChi frm = new frmBCTK_TongChi();
-            frm.Show();
-        }
-
-        private void bctkNhanVienToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmBCTK_NhanVien frm = new frmBCTK_NhanVien();
-            frm.Show();
-        }
-
-        private void HoaDonToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmHoaDon frm = new frmHoaDon();
-            frm.Show();
-        }
-
-        private void BanHangToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmBanHang frm = new frmBanHang();
-            frm.Show();
-        }
-
-        private void DangXuatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có muốn đăng xuất tài khoản?", "Hỏi người dùng", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                Application.Restart();
-        }
-
-        private void ThoatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có muốn thoát chương trình?", "Hỏi người dùng", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                Application.Exit();
-        }
-
-        private void HoTroToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BtnHoTro_Click(object sender, EventArgs e)
         {
             frmHoTro frm = new frmHoTro();
             frm.Show();
+        }
+
+        private void BtnDangXuat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đăng xuất tài khoản?", "Hỏi người dùng", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Restart();
         }
     }
 }

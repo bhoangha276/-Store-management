@@ -8,47 +8,70 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QLCHMP.Database;
 
 namespace QLCHMP.Interface
 {
     public partial class frmDoiMatKhau : Form
     {
+        Connect conn = new Connect();
+
         public frmDoiMatKhau()
         {
             InitializeComponent();
         }
-        SqlConnection cn = new SqlConnection(@"Data Source =DESKTOP-LTAOR50; Initial Catalog = QLCHMP; Integrated Security = True");
-        private void butdoimatkhau_Click(object sender, EventArgs e)
+
+        private void clearText()
         {
-            SqlDataAdapter da = new SqlDataAdapter("Select count (*) from DangNhap where TaiKhoan = N'" + textBox1.Text + "' and MatKhau = N'" + txtmatkhaucu.Text + "'", cn);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            errorProvider1.Clear();
-            if (dt.Rows[0][0].ToString() == "1")
+            txtTK.Clear();
+            txtMKCu.Clear();
+            txtMKMoi1.Clear();
+            txtMKMoi2.Clear();
+        }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            try
             {
-                if (txtmatkhaumoi.Text == txtnhaplaimatkhau.Text)
+                String tk = txtTK.Text;
+                String mkcu = txtMKCu.Text;
+                String mkmoi1 = txtMKMoi1.Text;
+                String mkmoi2 = txtMKMoi2.Text;
+
+
+                if (tk == "" || mkcu == "" || mkmoi1 == "" || mkmoi2 == "")
                 {
-                    SqlDataAdapter da1 = new SqlDataAdapter("update DangNhap set MatKhau = N'" + txtmatkhaumoi.Text + "' where TaiKhoan = N'" + textBox1.Text + "'and MatKhau = N'" + txtmatkhaucu.Text + "'", cn);
-                    DataTable dt1 = new DataTable();
-                    da1.Fill(dt1);
-                    MessageBox.Show("Đổi mật khẩu thành công !", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Vui lòng nhập đủ thông tin!");
+                }
+                else if (mkmoi1.Length < 3)
+                {
+                    MessageBox.Show("Mật khẩu ko ngắn quá 3 kí tự!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+                else if (mkmoi1 != mkmoi2)
+                {
+                    MessageBox.Show("Mật khẩu nhập lại không khớp!");
                 }
                 else
                 {
-                    errorProvider1.SetError(txtmatkhaumoi, "Bạn chưa điền mật khẩu!");
-                    errorProvider1.SetError(txtnhaplaimatkhau, "Mật khẩu nhập lại chưa đúng");
+
+                    String sql = "Update DangNhap set MatKhau = @mkmoi1 where TaiKhoan = @tk and MatKhau = @mkcu";
+
+                    List<SqlParameter> data = new List<SqlParameter>();
+                    data.Add(new SqlParameter("@tk", tk));
+                    data.Add(new SqlParameter("@mkcu", mkcu));
+                    data.Add(new SqlParameter("@mkmoi1", mkmoi1));
+
+                    conn.UpdateData(sql, data);
+
+                    MessageBox.Show("Đổi mật khẩu thành công!");
+                    clearText();
                 }
             }
-            else
+            catch (Exception ex)
             {
-                errorProvider1.SetError(textBox1, "Tên người dùng không đúng !");
-                errorProvider1.SetError(txtmatkhaucu, "Mật khẩu cũ không đúng");
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void butthoatdmk_Click(object sender, EventArgs e)
-        {
-            Application.Restart();
         }
     }
 }

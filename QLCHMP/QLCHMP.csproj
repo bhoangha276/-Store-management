@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.2.7, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.7\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -125,6 +128,42 @@
     <Compile Include="Interface\frmChiTietHD.Designer.cs">
       <DependentUpon>frmChiTietHD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\frmCNBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmCNBanHang.Designer.cs">
+      <DependentUpon>frmCNBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmCNBCTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmCNBCTK.Designer.cs">
+      <DependentUpon>frmCNBCTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmCNHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmCNHoaDon.Designer.cs">
+      <DependentUpon>frmCNHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmCNHoTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmCNHoTro.Designer.cs">
+      <DependentUpon>frmCNHoTro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmCNKhoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmCNKhoHang.Designer.cs">
+      <DependentUpon>frmCNKhoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmCNNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmCNNhanVien.Designer.cs">
+      <DependentUpon>frmCNNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\frmDangKi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +254,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\frmChiTietHD.resx">
       <DependentUpon>frmChiTietHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmCNBanHang.resx">
+      <DependentUpon>frmCNBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmCNBCTK.resx">
+      <DependentUpon>frmCNBCTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmCNHoaDon.resx">
+      <DependentUpon>frmCNHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmCNHoTro.resx">
+      <DependentUpon>frmCNHoTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmCNKhoHang.resx">
+      <DependentUpon>frmCNKhoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmCNNhanVien.resx">
+      <DependentUpon>frmCNNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\frmDangKi.resx">
       <DependentUpon>frmDangKi.cs</DependentUpon>
