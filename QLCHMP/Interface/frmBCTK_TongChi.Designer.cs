@@ -45,6 +45,12 @@ namespace QLCHMP.Interface
             this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
+            this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -52,12 +58,6 @@ namespace QLCHMP.Interface
             this.label1 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnInBC = new System.Windows.Forms.Button();
-            this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelThoiGian.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartChiTieu)).BeginInit();
             this.btnLuu.SuspendLayout();
@@ -208,6 +208,54 @@ namespace QLCHMP.Interface
             this.dgvSanPham.Size = new System.Drawing.Size(934, 711);
             this.dgvSanPham.TabIndex = 0;
             // 
+            // MaHD
+            // 
+            this.MaHD.DataPropertyName = "MaSP";
+            this.MaHD.HeaderText = "Mã SP";
+            this.MaHD.MinimumWidth = 8;
+            this.MaHD.Name = "MaHD";
+            this.MaHD.Width = 170;
+            // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaLoaiSP";
+            this.MaNV.HeaderText = "Mã loại SP";
+            this.MaNV.MinimumWidth = 8;
+            this.MaNV.Name = "MaNV";
+            this.MaNV.Width = 170;
+            // 
+            // NgayBan
+            // 
+            this.NgayBan.DataPropertyName = "TenSP";
+            this.NgayBan.HeaderText = "Tên SP";
+            this.NgayBan.MinimumWidth = 8;
+            this.NgayBan.Name = "NgayBan";
+            this.NgayBan.Width = 180;
+            // 
+            // TenKH
+            // 
+            this.TenKH.DataPropertyName = "SoLuong";
+            this.TenKH.HeaderText = "Số lượng";
+            this.TenKH.MinimumWidth = 8;
+            this.TenKH.Name = "TenKH";
+            this.TenKH.Width = 170;
+            // 
+            // TongTien
+            // 
+            this.TongTien.DataPropertyName = "NhaCungCap";
+            this.TongTien.HeaderText = "Nhà cung cấp";
+            this.TongTien.MinimumWidth = 8;
+            this.TongTien.Name = "TongTien";
+            this.TongTien.Width = 180;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "TongChiTieu";
+            this.Column1.HeaderText = "Chi Tiêu";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -278,54 +326,6 @@ namespace QLCHMP.Interface
             this.btnInBC.Text = "In báo báo";
             this.btnInBC.UseVisualStyleBackColor = true;
             this.btnInBC.Click += new System.EventHandler(this.btnInBC_Click);
-            // 
-            // MaHD
-            // 
-            this.MaHD.DataPropertyName = "MaSP";
-            this.MaHD.HeaderText = "Mã SP";
-            this.MaHD.MinimumWidth = 8;
-            this.MaHD.Name = "MaHD";
-            this.MaHD.Width = 170;
-            // 
-            // MaNV
-            // 
-            this.MaNV.DataPropertyName = "MaLoaiSP";
-            this.MaNV.HeaderText = "Mã loại SP";
-            this.MaNV.MinimumWidth = 8;
-            this.MaNV.Name = "MaNV";
-            this.MaNV.Width = 170;
-            // 
-            // NgayBan
-            // 
-            this.NgayBan.DataPropertyName = "TenSP";
-            this.NgayBan.HeaderText = "Tên SP";
-            this.NgayBan.MinimumWidth = 8;
-            this.NgayBan.Name = "NgayBan";
-            this.NgayBan.Width = 180;
-            // 
-            // TenKH
-            // 
-            this.TenKH.DataPropertyName = "SoLuong";
-            this.TenKH.HeaderText = "Số lượng";
-            this.TenKH.MinimumWidth = 8;
-            this.TenKH.Name = "TenKH";
-            this.TenKH.Width = 170;
-            // 
-            // TongTien
-            // 
-            this.TongTien.DataPropertyName = "NhaCungCap";
-            this.TongTien.HeaderText = "Nhà cung cấp";
-            this.TongTien.MinimumWidth = 8;
-            this.TongTien.Name = "TongTien";
-            this.TongTien.Width = 180;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "TongChiTieu";
-            this.Column1.HeaderText = "Chi Tiêu";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
             // 
             // frmBCTK_TongChi
             // 
