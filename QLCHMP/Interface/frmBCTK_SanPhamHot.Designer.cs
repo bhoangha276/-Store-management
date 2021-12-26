@@ -29,6 +29,9 @@ namespace QLCHMP.Interface
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBCTK_SanPhamHot));
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
@@ -37,7 +40,11 @@ namespace QLCHMP.Interface
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chartSanPham = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnInBC = new System.Windows.Forms.Button();
+            this.btnHienThi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSanPham)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -60,11 +67,11 @@ namespace QLCHMP.Interface
             this.Column3,
             this.GiaBan,
             this.Column5});
-            this.dgvSanPham.Location = new System.Drawing.Point(127, 119);
+            this.dgvSanPham.Location = new System.Drawing.Point(967, 115);
             this.dgvSanPham.Name = "dgvSanPham";
-            this.dgvSanPham.RowHeadersWidth = 62;
+            this.dgvSanPham.RowHeadersWidth = 30;
             this.dgvSanPham.RowTemplate.Height = 28;
-            this.dgvSanPham.Size = new System.Drawing.Size(1295, 621);
+            this.dgvSanPham.Size = new System.Drawing.Size(934, 781);
             this.dgvSanPham.TabIndex = 16;
             // 
             // Column1
@@ -93,7 +100,8 @@ namespace QLCHMP.Interface
             // 
             // GiaBan
             // 
-            this.GiaBan.HeaderText = "GiaBan";
+            this.GiaBan.DataPropertyName = "GiaBan";
+            this.GiaBan.HeaderText = "Giá bán";
             this.GiaBan.MinimumWidth = 8;
             this.GiaBan.Name = "GiaBan";
             this.GiaBan.Width = 150;
@@ -106,12 +114,52 @@ namespace QLCHMP.Interface
             this.Column5.Name = "Column5";
             this.Column5.Width = 150;
             // 
+            // chartSanPham
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartSanPham.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartSanPham.Legends.Add(legend1);
+            this.chartSanPham.Location = new System.Drawing.Point(27, 115);
+            this.chartSanPham.Name = "chartSanPham";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Sản phẩm";
+            this.chartSanPham.Series.Add(series1);
+            this.chartSanPham.Size = new System.Drawing.Size(934, 781);
+            this.chartSanPham.TabIndex = 17;
+            this.chartSanPham.Text = "chart1";
+            // 
+            // btnInBC
+            // 
+            this.btnInBC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInBC.Location = new System.Drawing.Point(1754, 920);
+            this.btnInBC.Name = "btnInBC";
+            this.btnInBC.Size = new System.Drawing.Size(147, 63);
+            this.btnInBC.TabIndex = 18;
+            this.btnInBC.Text = "In báo báo";
+            this.btnInBC.UseVisualStyleBackColor = true;
+            this.btnInBC.Click += new System.EventHandler(this.btnInBC_Click);
+            // 
+            // btnHienThi
+            // 
+            this.btnHienThi.Location = new System.Drawing.Point(817, 78);
+            this.btnHienThi.Name = "btnHienThi";
+            this.btnHienThi.Size = new System.Drawing.Size(110, 31);
+            this.btnHienThi.TabIndex = 26;
+            this.btnHienThi.Text = "Hiển thị";
+            this.btnHienThi.UseVisualStyleBackColor = true;
+            this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
+            // 
             // frmBCTK_SanPhamHot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.Controls.Add(this.btnHienThi);
+            this.Controls.Add(this.btnInBC);
+            this.Controls.Add(this.chartSanPham);
             this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -122,6 +170,7 @@ namespace QLCHMP.Interface
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmBCTK_SanPhamHot_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSanPham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +180,9 @@ namespace QLCHMP.Interface
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvSanPham;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSanPham;
+        private System.Windows.Forms.Button btnInBC;
+        private System.Windows.Forms.Button btnHienThi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

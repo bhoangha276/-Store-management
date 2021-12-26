@@ -141,6 +141,12 @@
     <Compile Include="Interface\frmCNBCTK.Designer.cs">
       <DependentUpon>frmCNBCTK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\frmCNDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmCNDoiMatKhau.Designer.cs">
+      <DependentUpon>frmCNDoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\frmCNHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\frmCNBCTK.resx">
       <DependentUpon>frmCNBCTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmCNDoiMatKhau.resx">
+      <DependentUpon>frmCNDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\frmCNHoaDon.resx">
       <DependentUpon>frmCNHoaDon.cs</DependentUpon>

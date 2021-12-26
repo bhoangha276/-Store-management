@@ -54,9 +54,13 @@ namespace QLCHMP.Interface
             this.label1 = new System.Windows.Forms.Label();
             this.chartDoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnHienThi = new System.Windows.Forms.Button();
+            this.panelThoiGian = new System.Windows.Forms.Panel();
+            this.radioButtonThang = new System.Windows.Forms.RadioButton();
+            this.radioButtonNam = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             this.btnLuu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).BeginInit();
+            this.panelThoiGian.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
@@ -210,9 +214,9 @@ namespace QLCHMP.Interface
             this.TongTien});
             this.dgvHoaDon.Location = new System.Drawing.Point(-1, 49);
             this.dgvHoaDon.Name = "dgvHoaDon";
-            this.dgvHoaDon.RowHeadersWidth = 62;
+            this.dgvHoaDon.RowHeadersWidth = 30;
             this.dgvHoaDon.RowTemplate.Height = 28;
-            this.dgvHoaDon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvHoaDon.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dgvHoaDon.Size = new System.Drawing.Size(934, 711);
             this.dgvHoaDon.TabIndex = 0;
             // 
@@ -266,7 +270,7 @@ namespace QLCHMP.Interface
             series1.ChartArea = "ChartArea1";
             series1.IsXValueIndexed = true;
             series1.Legend = "Legend1";
-            series1.Name = "Tổng tiền";
+            series1.Name = "Tổng doanh thu";
             this.chartDoanhThu.Series.Add(series1);
             this.chartDoanhThu.Size = new System.Drawing.Size(933, 781);
             this.chartDoanhThu.TabIndex = 24;
@@ -282,12 +286,44 @@ namespace QLCHMP.Interface
             this.btnHienThi.UseVisualStyleBackColor = true;
             this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
             // 
+            // panelThoiGian
+            // 
+            this.panelThoiGian.Controls.Add(this.radioButtonThang);
+            this.panelThoiGian.Controls.Add(this.radioButtonNam);
+            this.panelThoiGian.Location = new System.Drawing.Point(531, 78);
+            this.panelThoiGian.Name = "panelThoiGian";
+            this.panelThoiGian.Size = new System.Drawing.Size(266, 33);
+            this.panelThoiGian.TabIndex = 46;
+            // 
+            // radioButtonThang
+            // 
+            this.radioButtonThang.AutoSize = true;
+            this.radioButtonThang.Location = new System.Drawing.Point(134, 2);
+            this.radioButtonThang.Name = "radioButtonThang";
+            this.radioButtonThang.Size = new System.Drawing.Size(79, 24);
+            this.radioButtonThang.TabIndex = 23;
+            this.radioButtonThang.Text = "Tháng";
+            this.radioButtonThang.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonNam
+            // 
+            this.radioButtonNam.AutoSize = true;
+            this.radioButtonNam.Checked = true;
+            this.radioButtonNam.Location = new System.Drawing.Point(3, 3);
+            this.radioButtonNam.Name = "radioButtonNam";
+            this.radioButtonNam.Size = new System.Drawing.Size(67, 24);
+            this.radioButtonNam.TabIndex = 22;
+            this.radioButtonNam.TabStop = true;
+            this.radioButtonNam.Text = "Năm";
+            this.radioButtonNam.UseVisualStyleBackColor = true;
+            // 
             // frmBCTK_DoanhThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.Controls.Add(this.panelThoiGian);
             this.Controls.Add(this.btnHienThi);
             this.Controls.Add(this.chartDoanhThu);
             this.Controls.Add(this.btnThoat);
@@ -305,6 +341,8 @@ namespace QLCHMP.Interface
             this.btnLuu.ResumeLayout(false);
             this.btnLuu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).EndInit();
+            this.panelThoiGian.ResumeLayout(false);
+            this.panelThoiGian.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,5 +371,8 @@ namespace QLCHMP.Interface
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartDoanhThu;
         private System.Windows.Forms.Button btnHienThi;
+        private System.Windows.Forms.Panel panelThoiGian;
+        private System.Windows.Forms.RadioButton radioButtonThang;
+        private System.Windows.Forms.RadioButton radioButtonNam;
     }
 }

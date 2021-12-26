@@ -58,6 +58,11 @@ namespace QLCHMP.Interface
             OpenChildForm(new frmCNBanHang(), sender);
         }
 
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmCNDoiMatKhau(), sender);
+        }
+
         private void BtnHoTro_Click(object sender, EventArgs e)
         {
             frmHoTro frm = new frmHoTro();
@@ -69,5 +74,6 @@ namespace QLCHMP.Interface
             if (MessageBox.Show("Bạn có muốn đăng xuất tài khoản?", "Hỏi người dùng", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Restart();
         }
+
     }
 }

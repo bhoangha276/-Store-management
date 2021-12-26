@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace QLCHMP.Interface
 {
-    public partial class frmCNHoaDon : Form
+    public partial class frmCNDoiMatKhau : Form
     {
-        public frmCNHoaDon()
+        public frmCNDoiMatKhau()
         {
             InitializeComponent();
         }
 
-        private void btnHoaDon_Click(object sender, EventArgs e)
+        private void btnDoiMK_Click(object sender, EventArgs e)
         {
-            frmHoaDon frm = new frmHoaDon();
-            frm.Show();
-        }
-
-        private void btnChiTietHD_Click(object sender, EventArgs e)
-        {
-            frmChiTietHD frm = new frmChiTietHD();
+            frmDoiMatKhau frm = new frmDoiMatKhau();
             frm.Show();
         }
     }

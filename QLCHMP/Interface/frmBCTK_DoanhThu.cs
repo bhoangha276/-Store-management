@@ -105,12 +105,24 @@ namespace QLCHMP.Interface
             this.Dispose();
         }
 
-        SqlConnection cn = new SqlConnection(@"Data Source =DESKTOP-68U13L4\SQLEXPRESS; Initial Catalog = QL_CHMP; Integrated Security = True");
+
         private void btnHienThi_Click(object sender, EventArgs e)
         {
+            chartDoanhThu.Series["Tổng doanh thu"].Points.Clear();
+            SqlConnection cn = new SqlConnection(@"Data Source =DESKTOP-68U13L4\SQLEXPRESS; Initial Catalog = QL_CHMP; Integrated Security = True");
             try
             {
-                string sql = "select * from HoaDon";
+                string sql = "";
+                if(radioButtonNam.Checked == true)
+                {
+                    // Tính tổng doanh thu theo năm
+                    sql = "Select YEAR(NgayBan) as TG, SUM(TongTien) as DoanhThu from HoaDon group by YEAR(NgayBan)";
+                }
+                else
+                {
+                    sql = "Select MONTH(NgayBan) as TG, SUM(TongTien) as DoanhThu from HoaDon group by MONTH(NgayBan)";
+                }
+
                 DataTable dt = new DataTable();
 
                 SqlDataAdapter da = new SqlDataAdapter(sql, cn);
@@ -118,13 +130,14 @@ namespace QLCHMP.Interface
                 da.Fill(dt);
                 cn.Close();
 
-                chartDoanhThu.ChartAreas["ChartArea1"].AxisX.Title = "Ma HD";
-                chartDoanhThu.ChartAreas["ChartArea1"].AxisX.Title = "Tong tien";
+                String gt = radioButtonNam.Checked ? "Năm" : "Tháng";
+                chartDoanhThu.ChartAreas["ChartArea1"].AxisX.Title = gt;
+                chartDoanhThu.ChartAreas["ChartArea1"].AxisY.Title = "Doanh thu";
                 chartDoanhThu.ChartAreas["ChartArea1"].AxisX.Interval = 1;
 
                 for (int i=0; i<dt.Rows.Count; i++)
                 {
-                    chartDoanhThu.Series["Tổng tiền"].Points.AddXY(dt.Rows[i]["MaHD"], dt.Rows[i]["TongTien"]);
+                    chartDoanhThu.Series["Tổng doanh thu"].Points.AddXY(dt.Rows[i]["TG"], dt.Rows[i]["DoanhThu"]);
                 }
             }
             catch(Exception ex)
