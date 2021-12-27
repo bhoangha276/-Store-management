@@ -58,7 +58,7 @@ namespace QLCHMP.Interface
             this.txtnv.ForeColor = System.Drawing.Color.Black;
             this.txtnv.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnv.HoverState.Parent = this.txtnv;
-            this.txtnv.Location = new System.Drawing.Point(558, 311);
+            this.txtnv.Location = new System.Drawing.Point(557, 311);
             this.txtnv.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtnv.Name = "txtnv";
             this.txtnv.PasswordChar = '\0';
@@ -71,7 +71,7 @@ namespace QLCHMP.Interface
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(554, 278);
+            this.label5.Location = new System.Drawing.Point(553, 278);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 29;
@@ -93,7 +93,7 @@ namespace QLCHMP.Interface
             this.txtmatkhau.ForeColor = System.Drawing.Color.Black;
             this.txtmatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtmatkhau.HoverState.Parent = this.txtmatkhau;
-            this.txtmatkhau.Location = new System.Drawing.Point(558, 209);
+            this.txtmatkhau.Location = new System.Drawing.Point(557, 209);
             this.txtmatkhau.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtmatkhau.Name = "txtmatkhau";
             this.txtmatkhau.PasswordChar = '●';
@@ -119,7 +119,7 @@ namespace QLCHMP.Interface
             this.txtdangnhap.ForeColor = System.Drawing.Color.Black;
             this.txtdangnhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtdangnhap.HoverState.Parent = this.txtdangnhap;
-            this.txtdangnhap.Location = new System.Drawing.Point(558, 116);
+            this.txtdangnhap.Location = new System.Drawing.Point(557, 116);
             this.txtdangnhap.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtdangnhap.Name = "txtdangnhap";
             this.txtdangnhap.PasswordChar = '\0';
@@ -142,7 +142,7 @@ namespace QLCHMP.Interface
             this.btnDangKi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDangKi.ForeColor = System.Drawing.Color.White;
             this.btnDangKi.HoverState.Parent = this.btnDangKi;
-            this.btnDangKi.Location = new System.Drawing.Point(558, 425);
+            this.btnDangKi.Location = new System.Drawing.Point(557, 426);
             this.btnDangKi.Name = "btnDangKi";
             this.btnDangKi.ShadowDecoration.Parent = this.btnDangKi;
             this.btnDangKi.Size = new System.Drawing.Size(334, 45);
@@ -153,7 +153,7 @@ namespace QLCHMP.Interface
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(554, 186);
+            this.label3.Location = new System.Drawing.Point(553, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 20);
             this.label3.TabIndex = 25;
@@ -162,7 +162,7 @@ namespace QLCHMP.Interface
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(554, 83);
+            this.label2.Location = new System.Drawing.Point(553, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 20);
             this.label2.TabIndex = 24;
@@ -172,7 +172,7 @@ namespace QLCHMP.Interface
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(577, 32);
+            this.label1.Location = new System.Drawing.Point(576, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(303, 32);
             this.label1.TabIndex = 23;

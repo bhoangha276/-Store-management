@@ -26,7 +26,6 @@ namespace QLCHMP.Interface
             txtdangnhap.Clear();
             txtmatkhau.Clear();
             txtnv.Clear();
-            txtquanly.Clear();
         }
 
         private void btnDangKi_Click(object sender, EventArgs e)
