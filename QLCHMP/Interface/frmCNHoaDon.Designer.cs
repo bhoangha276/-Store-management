@@ -62,7 +62,7 @@ namespace QLCHMP.Interface
             this.btnHoaDon.ShadowDecoration.Parent = this.btnHoaDon;
             this.btnHoaDon.Size = new System.Drawing.Size(212, 45);
             this.btnHoaDon.TabIndex = 15;
-            this.btnHoaDon.Text = "Thông hóa đơn";
+            this.btnHoaDon.Text = "Thông tin hóa đơn";
             this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // btnChiTietHD

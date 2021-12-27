@@ -11,8 +11,8 @@ namespace QLCHMP.Database
 {
     class Connect
     {
-        //String conn_str = "Data Source = DESKTOP-68U13L4\\SQLEXPRESS;Initial Catalog=QL_CHMP;Integrated Security=True";
-        String conn_str = "Data Source = MSI\\SQLEXPRESS;Initial Catalog=QL_CHMP;Integrated Security=True";
+        string conn_str = "data source = desktop-68u13l4\\sqlexpress;initial catalog=ql_chmp;integrated security=true";
+        //String conn_str = "Data Source = MSI\\SQLEXPRESS;Initial Catalog=QL_CHMP;Integrated Security=True";
         SqlConnection conn = null;
 
         public Connect()

@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QLCHMP.Database;
 
 namespace QLCHMP.Interface
 {
     public partial class frmDangKi : Form
     {
+        Connect conn = new Connect();
+
         public frmDangKi()
         {
             InitializeComponent();
@@ -28,28 +31,29 @@ namespace QLCHMP.Interface
 
         private void btnDangKi_Click(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection(@"Data Source =DESKTOP-68U13L4\SQLEXPRESS; Initial Catalog = QL_CHMP; Integrated Security = True");
+            String taikhoan = txtdangnhap.Text;
+            String matkhau = txtmatkhau.Text;
+            String quyen = "Nhanvien";
+            String manv = txtnv.Text;
             try
             {
-                cn.Open();
-                string sql = "insert into DangNhap(TaiKhoan, MatKhau, QuyenQL, MaNV) values('" + txtdangnhap.Text + "', '" + txtmatkhau.Text + "', '" + txtquanly.Text + "', '" + txtnv.Text + "')";
-                SqlCommand cmd = new SqlCommand(sql, cn);
-                int kq = (int)cmd.ExecuteNonQuery();
-                if (kq > 0)
-                {
-                    MessageBox.Show("Đăng ký thành công !");
-                    clearText();
+                String sql = "insert into DangNhap values (@taikhoan, @matkhau, @quyen, @manv)";
 
-                    frmDangKi frmDK = new frmDangKi();
-                    frmDK.Dispose();
-                }
-                else
-                    MessageBox.Show("Đăng ký thất bại !");
-                cn.Close();
+                List<SqlParameter> data = new List<SqlParameter>();
+                data.Add(new SqlParameter("@taikhoan", taikhoan));
+                data.Add(new SqlParameter("@matkhau", matkhau));
+                data.Add(new SqlParameter("@quyen", quyen));
+                data.Add(new SqlParameter("@manv", manv));
+
+                conn.UpdateData(sql, data);
+
+                MessageBox.Show("Thêm thành công!");
+                clearText();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi kết nối" + ex.Message);
+                MessageBox.Show("Đăng kí thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("errThem: " + ex.Message);
             }
         }
     }

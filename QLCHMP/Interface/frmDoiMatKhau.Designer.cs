@@ -63,7 +63,7 @@ namespace QLCHMP.Interface
             this.txtMKMoi2.Location = new System.Drawing.Point(559, 394);
             this.txtMKMoi2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtMKMoi2.Name = "txtMKMoi2";
-            this.txtMKMoi2.PasswordChar = '\0';
+            this.txtMKMoi2.PasswordChar = '●';
             this.txtMKMoi2.PlaceholderText = "Nhập mật khẩu...";
             this.txtMKMoi2.SelectedText = "";
             this.txtMKMoi2.ShadowDecoration.Parent = this.txtMKMoi2;
@@ -89,7 +89,7 @@ namespace QLCHMP.Interface
             this.txtMKMoi1.Location = new System.Drawing.Point(559, 301);
             this.txtMKMoi1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtMKMoi1.Name = "txtMKMoi1";
-            this.txtMKMoi1.PasswordChar = '\0';
+            this.txtMKMoi1.PasswordChar = '●';
             this.txtMKMoi1.PlaceholderText = "Nhập mật khẩu...";
             this.txtMKMoi1.SelectedText = "";
             this.txtMKMoi1.ShadowDecoration.Parent = this.txtMKMoi1;

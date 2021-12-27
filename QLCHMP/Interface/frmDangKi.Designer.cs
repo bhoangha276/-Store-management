@@ -30,9 +30,7 @@ namespace QLCHMP.Interface
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangKi));
-            this.txtquanly = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtnv = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtmatkhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtdangnhap = new Guna.UI2.WinForms.Guna2TextBox();
@@ -43,32 +41,6 @@ namespace QLCHMP.Interface
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtquanly
-            // 
-            this.txtquanly.BorderRadius = 10;
-            this.txtquanly.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtquanly.DefaultText = "";
-            this.txtquanly.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtquanly.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtquanly.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtquanly.DisabledState.Parent = this.txtquanly;
-            this.txtquanly.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtquanly.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtquanly.FocusedState.Parent = this.txtquanly;
-            this.txtquanly.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.txtquanly.ForeColor = System.Drawing.Color.Black;
-            this.txtquanly.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtquanly.HoverState.Parent = this.txtquanly;
-            this.txtquanly.Location = new System.Drawing.Point(575, 404);
-            this.txtquanly.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtquanly.Name = "txtquanly";
-            this.txtquanly.PasswordChar = '\0';
-            this.txtquanly.PlaceholderText = "Nhập quyền...";
-            this.txtquanly.SelectedText = "";
-            this.txtquanly.ShadowDecoration.Parent = this.txtquanly;
-            this.txtquanly.Size = new System.Drawing.Size(334, 48);
-            this.txtquanly.TabIndex = 32;
             // 
             // txtnv
             // 
@@ -86,7 +58,7 @@ namespace QLCHMP.Interface
             this.txtnv.ForeColor = System.Drawing.Color.Black;
             this.txtnv.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnv.HoverState.Parent = this.txtnv;
-            this.txtnv.Location = new System.Drawing.Point(575, 311);
+            this.txtnv.Location = new System.Drawing.Point(558, 311);
             this.txtnv.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtnv.Name = "txtnv";
             this.txtnv.PasswordChar = '\0';
@@ -96,19 +68,10 @@ namespace QLCHMP.Interface
             this.txtnv.Size = new System.Drawing.Size(336, 48);
             this.txtnv.TabIndex = 31;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(571, 381);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 20);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Quyền:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(571, 278);
+            this.label5.Location = new System.Drawing.Point(554, 278);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 29;
@@ -130,7 +93,7 @@ namespace QLCHMP.Interface
             this.txtmatkhau.ForeColor = System.Drawing.Color.Black;
             this.txtmatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtmatkhau.HoverState.Parent = this.txtmatkhau;
-            this.txtmatkhau.Location = new System.Drawing.Point(575, 209);
+            this.txtmatkhau.Location = new System.Drawing.Point(558, 209);
             this.txtmatkhau.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtmatkhau.Name = "txtmatkhau";
             this.txtmatkhau.PasswordChar = '●';
@@ -156,7 +119,7 @@ namespace QLCHMP.Interface
             this.txtdangnhap.ForeColor = System.Drawing.Color.Black;
             this.txtdangnhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtdangnhap.HoverState.Parent = this.txtdangnhap;
-            this.txtdangnhap.Location = new System.Drawing.Point(575, 116);
+            this.txtdangnhap.Location = new System.Drawing.Point(558, 116);
             this.txtdangnhap.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtdangnhap.Name = "txtdangnhap";
             this.txtdangnhap.PasswordChar = '\0';
@@ -179,7 +142,7 @@ namespace QLCHMP.Interface
             this.btnDangKi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDangKi.ForeColor = System.Drawing.Color.White;
             this.btnDangKi.HoverState.Parent = this.btnDangKi;
-            this.btnDangKi.Location = new System.Drawing.Point(575, 492);
+            this.btnDangKi.Location = new System.Drawing.Point(558, 425);
             this.btnDangKi.Name = "btnDangKi";
             this.btnDangKi.ShadowDecoration.Parent = this.btnDangKi;
             this.btnDangKi.Size = new System.Drawing.Size(334, 45);
@@ -190,7 +153,7 @@ namespace QLCHMP.Interface
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(571, 186);
+            this.label3.Location = new System.Drawing.Point(554, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 20);
             this.label3.TabIndex = 25;
@@ -199,7 +162,7 @@ namespace QLCHMP.Interface
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(571, 83);
+            this.label2.Location = new System.Drawing.Point(554, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 20);
             this.label2.TabIndex = 24;
@@ -209,7 +172,7 @@ namespace QLCHMP.Interface
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(594, 32);
+            this.label1.Location = new System.Drawing.Point(577, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(303, 32);
             this.label1.TabIndex = 23;
@@ -232,9 +195,7 @@ namespace QLCHMP.Interface
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 549);
-            this.Controls.Add(this.txtquanly);
             this.Controls.Add(this.txtnv);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtmatkhau);
             this.Controls.Add(this.txtdangnhap);
@@ -255,10 +216,7 @@ namespace QLCHMP.Interface
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2TextBox txtquanly;
         private Guna.UI2.WinForms.Guna2TextBox txtnv;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtmatkhau;
         private Guna.UI2.WinForms.Guna2TextBox txtdangnhap;
