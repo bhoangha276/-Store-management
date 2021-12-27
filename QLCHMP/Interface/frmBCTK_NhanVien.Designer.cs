@@ -32,6 +32,7 @@ namespace QLCHMP.Interface
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.Button btnInBC;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBCTK_NhanVien));
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,13 +44,14 @@ namespace QLCHMP.Interface
             this.chartNhanVien = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.btnHienThi = new System.Windows.Forms.Button();
-            this.btnInBC = new System.Windows.Forms.Button();
+            btnInBC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvNhanVien
             // 
+            this.dgvNhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -58,11 +60,12 @@ namespace QLCHMP.Interface
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dgvNhanVien.Location = new System.Drawing.Point(967, 115);
+            this.dgvNhanVien.Location = new System.Drawing.Point(860, 92);
+            this.dgvNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 30;
             this.dgvNhanVien.RowTemplate.Height = 28;
-            this.dgvNhanVien.Size = new System.Drawing.Size(934, 781);
+            this.dgvNhanVien.Size = new System.Drawing.Size(830, 625);
             this.dgvNhanVien.TabIndex = 0;
             // 
             // Column1
@@ -119,13 +122,14 @@ namespace QLCHMP.Interface
             this.chartNhanVien.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartNhanVien.Legends.Add(legend1);
-            this.chartNhanVien.Location = new System.Drawing.Point(27, 115);
+            this.chartNhanVien.Location = new System.Drawing.Point(24, 92);
+            this.chartNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartNhanVien.Name = "chartNhanVien";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Doanh thu";
             this.chartNhanVien.Series.Add(series1);
-            this.chartNhanVien.Size = new System.Drawing.Size(934, 781);
+            this.chartNhanVien.Size = new System.Drawing.Size(830, 625);
             this.chartNhanVien.TabIndex = 1;
             this.chartNhanVien.Text = "chart1";
             // 
@@ -134,17 +138,19 @@ namespace QLCHMP.Interface
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 20);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(18, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(600, 37);
+            this.label1.Size = new System.Drawing.Size(510, 31);
             this.label1.TabIndex = 16;
             this.label1.Text = "THỐNG KÊ DOANH THU NHÂN VIÊN";
             // 
             // btnHienThi
             // 
-            this.btnHienThi.Location = new System.Drawing.Point(817, 78);
+            this.btnHienThi.Location = new System.Drawing.Point(726, 62);
+            this.btnHienThi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHienThi.Name = "btnHienThi";
-            this.btnHienThi.Size = new System.Drawing.Size(110, 31);
+            this.btnHienThi.Size = new System.Drawing.Size(98, 25);
             this.btnHienThi.TabIndex = 27;
             this.btnHienThi.Text = "Hiển thị";
             this.btnHienThi.UseVisualStyleBackColor = true;
@@ -152,28 +158,31 @@ namespace QLCHMP.Interface
             // 
             // btnInBC
             // 
-            this.btnInBC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInBC.Location = new System.Drawing.Point(1754, 920);
-            this.btnInBC.Name = "btnInBC";
-            this.btnInBC.Size = new System.Drawing.Size(147, 63);
-            this.btnInBC.TabIndex = 28;
-            this.btnInBC.Text = "In báo báo";
-            this.btnInBC.UseVisualStyleBackColor = true;
+            btnInBC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnInBC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            btnInBC.Location = new System.Drawing.Point(1559, 736);
+            btnInBC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnInBC.Name = "btnInBC";
+            btnInBC.Size = new System.Drawing.Size(131, 50);
+            btnInBC.TabIndex = 28;
+            btnInBC.Text = "In báo báo";
+            btnInBC.UseVisualStyleBackColor = true;
             // 
             // frmBCTK_NhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
-            this.Controls.Add(this.btnInBC);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.ClientSize = new System.Drawing.Size(1710, 840);
+            this.Controls.Add(btnInBC);
             this.Controls.Add(this.btnHienThi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chartNhanVien);
             this.Controls.Add(this.dgvNhanVien);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmBCTK_NhanVien";
-            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBCTK_NhanVien";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -191,7 +200,6 @@ namespace QLCHMP.Interface
         private System.Windows.Forms.DataVisualization.Charting.Chart chartNhanVien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnHienThi;
-        private System.Windows.Forms.Button btnInBC;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

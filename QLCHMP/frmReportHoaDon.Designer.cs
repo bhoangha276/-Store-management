@@ -59,10 +59,11 @@ namespace QLCHMP
             reportDataSource1.Value = this.ChiTietHDBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "QLCHMP.Interface.ReportHoaDon.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(125, 79);
+            this.reportViewer1.Location = new System.Drawing.Point(111, 63);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(959, 783);
+            this.reportViewer1.Size = new System.Drawing.Size(853, 627);
             this.reportViewer1.TabIndex = 0;
             // 
             // ChiTietHDTableAdapter
@@ -72,24 +73,28 @@ namespace QLCHMP
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(125, 37);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(111, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 20);
+            this.label1.Size = new System.Drawing.Size(87, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "Mã hóa đơn:";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(256, 34);
+            this.txtSearch.Location = new System.Drawing.Point(228, 27);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(181, 26);
+            this.txtSearch.Size = new System.Drawing.Size(161, 22);
             this.txtSearch.TabIndex = 5;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(443, 31);
+            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.btnSearch.Location = new System.Drawing.Point(430, 26);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(112, 31);
+            this.btnSearch.Size = new System.Drawing.Size(100, 25);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -97,14 +102,16 @@ namespace QLCHMP
             // 
             // frmReportHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1494, 1050);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.ClientSize = new System.Drawing.Size(1328, 840);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.reportViewer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmReportHoaDon";
             this.Text = "frmReportHoaDon";
             this.Load += new System.EventHandler(this.frmReportHoaDon_Load);

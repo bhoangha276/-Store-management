@@ -31,39 +31,30 @@ namespace QLCHMP.Interface
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChiTietHD));
             this.dgvChiTietHD = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHD)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvChiTietHD
             // 
+            this.dgvChiTietHD.BackgroundColor = System.Drawing.Color.White;
             this.dgvChiTietHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChiTietHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgvChiTietHD.Location = new System.Drawing.Point(27, 60);
+            this.dgvChiTietHD.Location = new System.Drawing.Point(24, 48);
+            this.dgvChiTietHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvChiTietHD.Name = "dgvChiTietHD";
             this.dgvChiTietHD.RowHeadersWidth = 62;
             this.dgvChiTietHD.RowTemplate.Height = 28;
-            this.dgvChiTietHD.Size = new System.Drawing.Size(1090, 695);
+            this.dgvChiTietHD.Size = new System.Drawing.Size(969, 556);
             this.dgvChiTietHD.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 37);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "CHI TIẾT HÓA ĐƠN";
             // 
             // Column1
             // 
@@ -97,17 +88,30 @@ namespace QLCHMP.Interface
             this.Column4.Name = "Column4";
             this.Column4.Width = 150;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(18, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(279, 31);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "CHI TIẾT HÓA ĐƠN";
+            // 
             // frmChiTietHD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.ClientSize = new System.Drawing.Size(1710, 840);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvChiTietHD);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmChiTietHD";
-            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmChiTietHD";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

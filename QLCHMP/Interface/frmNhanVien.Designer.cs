@@ -80,24 +80,28 @@ namespace QLCHMP.Interface
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(27, 43);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(24, 34);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(143, 25);
+            this.label10.Size = new System.Drawing.Size(118, 20);
             this.label10.TabIndex = 42;
             this.label10.Text = "Tên nhân viên:";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(181, 40);
+            this.txtSearch.Location = new System.Drawing.Point(161, 32);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(192, 30);
+            this.txtSearch.Size = new System.Drawing.Size(171, 26);
             this.txtSearch.TabIndex = 41;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(374, 39);
+            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.btnSearch.Location = new System.Drawing.Point(332, 31);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(76, 40);
+            this.btnSearch.Size = new System.Drawing.Size(68, 32);
             this.btnSearch.TabIndex = 40;
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -106,9 +110,11 @@ namespace QLCHMP.Interface
             // btnKLuu
             // 
             this.btnKLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKLuu.Location = new System.Drawing.Point(1067, 32);
+            this.btnKLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.btnKLuu.Location = new System.Drawing.Point(948, 26);
+            this.btnKLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKLuu.Name = "btnKLuu";
-            this.btnKLuu.Size = new System.Drawing.Size(100, 50);
+            this.btnKLuu.Size = new System.Drawing.Size(89, 40);
             this.btnKLuu.TabIndex = 39;
             this.btnKLuu.Text = "Làm mới";
             this.btnKLuu.UseVisualStyleBackColor = true;
@@ -117,9 +123,11 @@ namespace QLCHMP.Interface
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(906, 32);
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.btnXoa.Location = new System.Drawing.Point(805, 26);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(100, 50);
+            this.btnXoa.Size = new System.Drawing.Size(89, 40);
             this.btnXoa.TabIndex = 37;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -128,9 +136,11 @@ namespace QLCHMP.Interface
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(595, 32);
+            this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.btnThem.Location = new System.Drawing.Point(529, 26);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(100, 50);
+            this.btnThem.Size = new System.Drawing.Size(89, 40);
             this.btnThem.TabIndex = 35;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -150,9 +160,12 @@ namespace QLCHMP.Interface
             this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(75, 351);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(67, 281);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1774, 91);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(1577, 73);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Các chức năng";
@@ -160,9 +173,11 @@ namespace QLCHMP.Interface
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(1377, 25);
+            this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.btnThoat.Location = new System.Drawing.Point(1224, 20);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(170, 60);
+            this.btnThoat.Size = new System.Drawing.Size(151, 48);
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -171,9 +186,11 @@ namespace QLCHMP.Interface
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(750, 32);
+            this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.btnSua.Location = new System.Drawing.Point(667, 26);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(100, 50);
+            this.btnSua.Size = new System.Drawing.Size(89, 40);
             this.btnSua.TabIndex = 36;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -181,17 +198,20 @@ namespace QLCHMP.Interface
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(790, 164);
+            this.txtSDT.Location = new System.Drawing.Point(702, 131);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(266, 30);
+            this.txtSDT.Size = new System.Drawing.Size(237, 26);
             this.txtSDT.TabIndex = 44;
             // 
             // radioButtonNu
             // 
             this.radioButtonNu.AutoSize = true;
-            this.radioButtonNu.Location = new System.Drawing.Point(134, 2);
+            this.radioButtonNu.ForeColor = System.Drawing.Color.White;
+            this.radioButtonNu.Location = new System.Drawing.Point(119, 2);
+            this.radioButtonNu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonNu.Name = "radioButtonNu";
-            this.radioButtonNu.Size = new System.Drawing.Size(62, 29);
+            this.radioButtonNu.Size = new System.Drawing.Size(51, 24);
             this.radioButtonNu.TabIndex = 23;
             this.radioButtonNu.Text = "Nữ";
             this.radioButtonNu.UseVisualStyleBackColor = true;
@@ -200,9 +220,11 @@ namespace QLCHMP.Interface
             // 
             this.radioButtonNam.AutoSize = true;
             this.radioButtonNam.Checked = true;
-            this.radioButtonNam.Location = new System.Drawing.Point(3, 3);
+            this.radioButtonNam.ForeColor = System.Drawing.Color.White;
+            this.radioButtonNam.Location = new System.Drawing.Point(3, 2);
+            this.radioButtonNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonNam.Name = "radioButtonNam";
-            this.radioButtonNam.Size = new System.Drawing.Size(78, 29);
+            this.radioButtonNam.Size = new System.Drawing.Size(65, 24);
             this.radioButtonNam.TabIndex = 22;
             this.radioButtonNam.TabStop = true;
             this.radioButtonNam.Text = "Nam";
@@ -217,9 +239,10 @@ namespace QLCHMP.Interface
             "Thủ kho",
             "Kế toán",
             "Quản lý"});
-            this.cbbChucVu.Location = new System.Drawing.Point(1416, 37);
+            this.cbbChucVu.Location = new System.Drawing.Point(1259, 30);
+            this.cbbChucVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbChucVu.Name = "cbbChucVu";
-            this.cbbChucVu.Size = new System.Drawing.Size(266, 33);
+            this.cbbChucVu.Size = new System.Drawing.Size(237, 28);
             this.cbbChucVu.TabIndex = 8;
             // 
             // dtNgaySinh
@@ -227,26 +250,29 @@ namespace QLCHMP.Interface
             this.dtNgaySinh.Checked = false;
             this.dtNgaySinh.CustomFormat = "dd/MM/yyy";
             this.dtNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgaySinh.Location = new System.Drawing.Point(1416, 98);
+            this.dtNgaySinh.Location = new System.Drawing.Point(1259, 78);
+            this.dtNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtNgaySinh.Name = "dtNgaySinh";
-            this.dtNgaySinh.Size = new System.Drawing.Size(266, 30);
+            this.dtNgaySinh.Size = new System.Drawing.Size(237, 26);
             this.dtNgaySinh.TabIndex = 46;
             // 
             // panelGioiTinh
             // 
             this.panelGioiTinh.Controls.Add(this.radioButtonNu);
             this.panelGioiTinh.Controls.Add(this.radioButtonNam);
-            this.panelGioiTinh.Location = new System.Drawing.Point(789, 92);
+            this.panelGioiTinh.Location = new System.Drawing.Point(701, 74);
+            this.panelGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelGioiTinh.Name = "panelGioiTinh";
-            this.panelGioiTinh.Size = new System.Drawing.Size(266, 33);
+            this.panelGioiTinh.Size = new System.Drawing.Size(236, 26);
             this.panelGioiTinh.TabIndex = 45;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(647, 170);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(575, 136);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 25);
+            this.label9.Size = new System.Drawing.Size(47, 20);
             this.label9.TabIndex = 43;
             this.label9.Text = "SĐT:";
             // 
@@ -255,7 +281,7 @@ namespace QLCHMP.Interface
             this.dgvNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvNhanVien.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgvNhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNV,
@@ -267,12 +293,13 @@ namespace QLCHMP.Interface
             this.DiaChi,
             this.SDT,
             this.HeSoLuong});
-            this.dgvNhanVien.Location = new System.Drawing.Point(75, 476);
+            this.dgvNhanVien.Location = new System.Drawing.Point(67, 381);
+            this.dgvNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 62;
             this.dgvNhanVien.RowTemplate.Height = 28;
             this.dgvNhanVien.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1774, 537);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1577, 430);
             this.dgvNhanVien.TabIndex = 9;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
@@ -350,83 +377,93 @@ namespace QLCHMP.Interface
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(181, 164);
+            this.txtDiaChi.Location = new System.Drawing.Point(161, 131);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(266, 30);
+            this.txtDiaChi.Size = new System.Drawing.Size(237, 26);
             this.txtDiaChi.TabIndex = 42;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(37, 164);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(33, 131);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 25);
+            this.label8.Size = new System.Drawing.Size(66, 20);
             this.label8.TabIndex = 41;
             this.label8.Text = "Địa chỉ:";
             // 
             // txtCMND
             // 
-            this.txtCMND.Location = new System.Drawing.Point(181, 92);
+            this.txtCMND.Location = new System.Drawing.Point(161, 74);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(266, 30);
+            this.txtCMND.Size = new System.Drawing.Size(237, 26);
             this.txtCMND.TabIndex = 38;
             // 
             // txtTenNV
             // 
-            this.txtTenNV.Location = new System.Drawing.Point(789, 34);
+            this.txtTenNV.Location = new System.Drawing.Point(701, 27);
+            this.txtTenNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenNV.Name = "txtTenNV";
-            this.txtTenNV.Size = new System.Drawing.Size(266, 30);
+            this.txtTenNV.Size = new System.Drawing.Size(237, 26);
             this.txtTenNV.TabIndex = 36;
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(181, 31);
+            this.txtMaNV.Location = new System.Drawing.Point(161, 25);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(266, 30);
+            this.txtMaNV.Size = new System.Drawing.Size(237, 26);
             this.txtMaNV.TabIndex = 35;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1222, 98);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(1086, 78);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 25);
+            this.label7.Size = new System.Drawing.Size(88, 20);
             this.label7.TabIndex = 29;
             this.label7.Text = "Ngày sinh:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(647, 95);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(575, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 25);
+            this.label6.Size = new System.Drawing.Size(76, 20);
             this.label6.TabIndex = 28;
             this.label6.Text = "Giới tính:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(38, 95);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(34, 76);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 25);
+            this.label5.Size = new System.Drawing.Size(65, 20);
             this.label5.TabIndex = 27;
             this.label5.Text = "CMND:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1222, 36);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(1086, 29);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 25);
+            this.label4.Size = new System.Drawing.Size(75, 20);
             this.label4.TabIndex = 26;
             this.label4.Text = "Chức vụ:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(636, 40);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(565, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 25);
+            this.label3.Size = new System.Drawing.Size(118, 20);
             this.label3.TabIndex = 25;
             this.label3.Text = "Tên nhân viên:";
             // 
@@ -454,9 +491,12 @@ namespace QLCHMP.Interface
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(75, 123);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(67, 98);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1774, 222);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1577, 178);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
@@ -472,26 +512,29 @@ namespace QLCHMP.Interface
             "2.5",
             "3",
             "3.5"});
-            this.cbbHSL.Location = new System.Drawing.Point(1416, 161);
+            this.cbbHSL.Location = new System.Drawing.Point(1259, 129);
+            this.cbbHSL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbHSL.Name = "cbbHSL";
-            this.cbbHSL.Size = new System.Drawing.Size(116, 33);
+            this.cbbHSL.Size = new System.Drawing.Size(104, 28);
             this.cbbHSL.TabIndex = 48;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(1222, 164);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(1086, 131);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(122, 25);
+            this.label11.Size = new System.Drawing.Size(104, 20);
             this.label11.TabIndex = 47;
             this.label11.Text = "Hệ số lương:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 34);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(24, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 25);
+            this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 24;
             this.label2.Text = "Mã nhân viên:";
             // 
@@ -502,24 +545,26 @@ namespace QLCHMP.Interface
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(789, 50);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(701, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(396, 40);
+            this.label1.Size = new System.Drawing.Size(337, 36);
             this.label1.TabIndex = 8;
             this.label1.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
             // frmNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.ClientSize = new System.Drawing.Size(1710, 840);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dgvNhanVien);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Navy;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmNhanVien";
             this.Text = "frmNhanVien";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

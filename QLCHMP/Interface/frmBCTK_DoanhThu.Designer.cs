@@ -65,9 +65,10 @@ namespace QLCHMP.Interface
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(785, 10);
+            this.btnReset.Location = new System.Drawing.Point(698, 8);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(108, 34);
+            this.btnReset.Size = new System.Drawing.Size(96, 27);
             this.btnReset.TabIndex = 23;
             this.btnReset.Text = "Chọn tất cả";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -77,34 +78,38 @@ namespace QLCHMP.Interface
             // 
             this.dateTimePickerEnd.CustomFormat = "dd/MM/yyyy";
             this.dateTimePickerEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerEnd.Location = new System.Drawing.Point(428, 12);
+            this.dateTimePickerEnd.Location = new System.Drawing.Point(380, 10);
+            this.dateTimePickerEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerEnd.Name = "dateTimePickerEnd";
-            this.dateTimePickerEnd.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePickerEnd.Size = new System.Drawing.Size(178, 22);
             this.dateTimePickerEnd.TabIndex = 22;
             // 
             // dateTimePickerStart
             // 
             this.dateTimePickerStart.CustomFormat = "dd/MM/yyyy";
             this.dateTimePickerStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerStart.Location = new System.Drawing.Point(95, 11);
+            this.dateTimePickerStart.Location = new System.Drawing.Point(84, 9);
+            this.dateTimePickerStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
-            this.dateTimePickerStart.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePickerStart.Size = new System.Drawing.Size(178, 22);
             this.dateTimePickerStart.TabIndex = 20;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 13);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(18, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 20);
+            this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 19;
             this.label5.Text = "Từ ngày:";
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(673, 11);
+            this.btnSearch.Location = new System.Drawing.Point(598, 9);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 33);
+            this.btnSearch.Size = new System.Drawing.Size(67, 26);
             this.btnSearch.TabIndex = 18;
             this.btnSearch.Text = "Lọc";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -113,9 +118,11 @@ namespace QLCHMP.Interface
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(1752, 921);
+            this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.btnThoat.Location = new System.Drawing.Point(1557, 737);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(147, 63);
+            this.btnThoat.Size = new System.Drawing.Size(131, 50);
             this.btnThoat.TabIndex = 17;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -124,9 +131,11 @@ namespace QLCHMP.Interface
             // btnInBC
             // 
             this.btnInBC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInBC.Location = new System.Drawing.Point(966, 921);
+            this.btnInBC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.btnInBC.Location = new System.Drawing.Point(859, 737);
+            this.btnInBC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInBC.Name = "btnInBC";
-            this.btnInBC.Size = new System.Drawing.Size(147, 63);
+            this.btnInBC.Size = new System.Drawing.Size(131, 50);
             this.btnInBC.TabIndex = 16;
             this.btnInBC.Text = "In báo báo";
             this.btnInBC.UseVisualStyleBackColor = true;
@@ -136,9 +145,10 @@ namespace QLCHMP.Interface
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 777);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(16, 622);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(291, 32);
+            this.label2.Size = new System.Drawing.Size(253, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "TỔNG DOANH THU:";
             // 
@@ -186,9 +196,10 @@ namespace QLCHMP.Interface
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(702, 777);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(624, 622);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 32);
+            this.label4.Size = new System.Drawing.Size(66, 29);
             this.label4.TabIndex = 5;
             this.label4.Text = "VNĐ";
             // 
@@ -196,15 +207,16 @@ namespace QLCHMP.Interface
             // 
             this.labelDoanhThu.AutoSize = true;
             this.labelDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDoanhThu.Location = new System.Drawing.Point(498, 777);
+            this.labelDoanhThu.ForeColor = System.Drawing.Color.White;
+            this.labelDoanhThu.Location = new System.Drawing.Point(443, 622);
             this.labelDoanhThu.Name = "labelDoanhThu";
-            this.labelDoanhThu.Size = new System.Drawing.Size(186, 32);
+            this.labelDoanhThu.Size = new System.Drawing.Size(153, 29);
             this.labelDoanhThu.TabIndex = 4;
             this.labelDoanhThu.Text = "000,000,000";
             // 
             // dgvHoaDon
             // 
-            this.dgvHoaDon.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgvHoaDon.BackgroundColor = System.Drawing.Color.White;
             this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaHD,
@@ -212,20 +224,22 @@ namespace QLCHMP.Interface
             this.NgayBan,
             this.TenKH,
             this.TongTien});
-            this.dgvHoaDon.Location = new System.Drawing.Point(-1, 49);
+            this.dgvHoaDon.Location = new System.Drawing.Point(-1, 39);
+            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.RowHeadersWidth = 30;
             this.dgvHoaDon.RowTemplate.Height = 28;
             this.dgvHoaDon.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dgvHoaDon.Size = new System.Drawing.Size(934, 711);
+            this.dgvHoaDon.Size = new System.Drawing.Size(830, 569);
             this.dgvHoaDon.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(341, 15);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(303, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 20);
+            this.label6.Size = new System.Drawing.Size(73, 17);
             this.label6.TabIndex = 21;
             this.label6.Text = "Đến ngày:";
             // 
@@ -242,9 +256,10 @@ namespace QLCHMP.Interface
             this.btnLuu.Controls.Add(this.label2);
             this.btnLuu.Controls.Add(this.btnSearch);
             this.btnLuu.Controls.Add(this.label6);
-            this.btnLuu.Location = new System.Drawing.Point(966, 65);
+            this.btnLuu.Location = new System.Drawing.Point(859, 52);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(935, 831);
+            this.btnLuu.Size = new System.Drawing.Size(831, 665);
             this.btnLuu.TabIndex = 15;
             // 
             // label1
@@ -252,9 +267,10 @@ namespace QLCHMP.Interface
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 20);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(18, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(382, 37);
+            this.label1.Size = new System.Drawing.Size(324, 31);
             this.label1.TabIndex = 14;
             this.label1.Text = "BÁO CÁO DOANH THU";
             // 
@@ -264,7 +280,8 @@ namespace QLCHMP.Interface
             this.chartDoanhThu.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartDoanhThu.Legends.Add(legend1);
-            this.chartDoanhThu.Location = new System.Drawing.Point(27, 115);
+            this.chartDoanhThu.Location = new System.Drawing.Point(24, 92);
+            this.chartDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartDoanhThu.Name = "chartDoanhThu";
             this.chartDoanhThu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
@@ -272,15 +289,16 @@ namespace QLCHMP.Interface
             series1.Legend = "Legend1";
             series1.Name = "Tổng doanh thu";
             this.chartDoanhThu.Series.Add(series1);
-            this.chartDoanhThu.Size = new System.Drawing.Size(933, 781);
+            this.chartDoanhThu.Size = new System.Drawing.Size(829, 625);
             this.chartDoanhThu.TabIndex = 24;
             this.chartDoanhThu.Text = "chart1";
             // 
             // btnHienThi
             // 
-            this.btnHienThi.Location = new System.Drawing.Point(817, 78);
+            this.btnHienThi.Location = new System.Drawing.Point(726, 62);
+            this.btnHienThi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHienThi.Name = "btnHienThi";
-            this.btnHienThi.Size = new System.Drawing.Size(110, 31);
+            this.btnHienThi.Size = new System.Drawing.Size(98, 25);
             this.btnHienThi.TabIndex = 25;
             this.btnHienThi.Text = "Hiển thị";
             this.btnHienThi.UseVisualStyleBackColor = true;
@@ -290,17 +308,20 @@ namespace QLCHMP.Interface
             // 
             this.panelThoiGian.Controls.Add(this.radioButtonThang);
             this.panelThoiGian.Controls.Add(this.radioButtonNam);
-            this.panelThoiGian.Location = new System.Drawing.Point(531, 78);
+            this.panelThoiGian.Location = new System.Drawing.Point(472, 62);
+            this.panelThoiGian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelThoiGian.Name = "panelThoiGian";
-            this.panelThoiGian.Size = new System.Drawing.Size(266, 33);
+            this.panelThoiGian.Size = new System.Drawing.Size(236, 26);
             this.panelThoiGian.TabIndex = 46;
             // 
             // radioButtonThang
             // 
             this.radioButtonThang.AutoSize = true;
-            this.radioButtonThang.Location = new System.Drawing.Point(134, 2);
+            this.radioButtonThang.ForeColor = System.Drawing.Color.White;
+            this.radioButtonThang.Location = new System.Drawing.Point(119, 2);
+            this.radioButtonThang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonThang.Name = "radioButtonThang";
-            this.radioButtonThang.Size = new System.Drawing.Size(79, 24);
+            this.radioButtonThang.Size = new System.Drawing.Size(70, 21);
             this.radioButtonThang.TabIndex = 23;
             this.radioButtonThang.Text = "Tháng";
             this.radioButtonThang.UseVisualStyleBackColor = true;
@@ -309,9 +330,11 @@ namespace QLCHMP.Interface
             // 
             this.radioButtonNam.AutoSize = true;
             this.radioButtonNam.Checked = true;
-            this.radioButtonNam.Location = new System.Drawing.Point(3, 3);
+            this.radioButtonNam.ForeColor = System.Drawing.Color.White;
+            this.radioButtonNam.Location = new System.Drawing.Point(3, 2);
+            this.radioButtonNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButtonNam.Name = "radioButtonNam";
-            this.radioButtonNam.Size = new System.Drawing.Size(67, 24);
+            this.radioButtonNam.Size = new System.Drawing.Size(58, 21);
             this.radioButtonNam.TabIndex = 22;
             this.radioButtonNam.TabStop = true;
             this.radioButtonNam.Text = "Năm";
@@ -319,10 +342,10 @@ namespace QLCHMP.Interface
             // 
             // frmBCTK_DoanhThu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.ClientSize = new System.Drawing.Size(1710, 840);
             this.Controls.Add(this.panelThoiGian);
             this.Controls.Add(this.btnHienThi);
             this.Controls.Add(this.chartDoanhThu);
@@ -332,8 +355,9 @@ namespace QLCHMP.Interface
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Navy;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmBCTK_DoanhThu";
-            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
             this.Text = "frmBCTK_DoanhThu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmBCTK_DoanhThu_Load);
